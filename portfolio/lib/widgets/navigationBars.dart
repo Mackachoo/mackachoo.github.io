@@ -1,20 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/buttons.dart';
 import 'package:portfolio/widgets/logoButton.dart';
+import 'package:portfolio/widgets/sectionmenu.dart';
 
-class MobileBar extends AppBar {
-  MobileBar()
+class MobileBar extends PreferredSize {
+  final VoidCallback? onPressed;
+  MobileBar({super.key, this.onPressed})
       : super(
-          backgroundColor: Colors.transparent,
-          elevation: 0.0,
-          leading: LogoButton(menuButton: true),
+          preferredSize: const Size.fromHeight(80),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Hero(
+                    tag: 'logo',
+                    child: LogoButton(state: "toMenu", onPressed: onPressed)),
+                EnquiryButton(),
+              ],
+            ),
+          ),
         );
 }
 
-class DesktopBar extends AppBar {
-  DesktopBar()
+class DesktopBar extends PreferredSize {
+  DesktopBar({super.key})
       : super(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          leading: LogoButton(),
+          preferredSize: const Size.fromHeight(100),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Spacer(flex: 1),
+                const Flexible(
+                    flex: 6, child: SectionMenu(axis: Axis.horizontal)),
+                Flexible(flex: 2, child: EnquiryButton()),
+              ],
+            ),
+          ),
         );
 }

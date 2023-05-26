@@ -2,16 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
 class LogoButton extends StatelessWidget {
-  final bool menuButton;
-  const LogoButton({super.key, this.menuButton = false});
+  final String state;
+  final VoidCallback? onPressed;
+  const LogoButton({super.key, required this.state, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-        onPressed: () {},
-        icon: const RiveAnimation.asset(
-          'assets/rive/logo.riv',
-          stateMachines: ['ScreenMachine'],
-        ));
+    return SizedBox(
+      child: IconButton(
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          iconSize: 40,
+          splashRadius: 1,
+          onPressed: onPressed,
+          icon: RiveAnimation.asset(
+            'assets/logo.riv',
+            animations: [state],
+          )),
+    );
   }
 }
