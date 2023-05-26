@@ -2,7 +2,7 @@ name: Deploy-Flutter-to-Githuh-Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
