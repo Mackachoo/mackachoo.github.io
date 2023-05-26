@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/colours.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/content/socials.dart';
 import 'package:portfolio/widgets/contentbody.dart';
-import 'package:portfolio/widgets/logoButton.dart';
+import 'package:portfolio/widgets/logobutton.dart';
 import 'package:portfolio/widgets/navigationbars.dart';
 import 'package:portfolio/widgets/sectionmenu.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());

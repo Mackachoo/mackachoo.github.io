@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/buttons.dart';
-import 'package:portfolio/widgets/logoButton.dart';
-import 'package:portfolio/widgets/sectionmenu.dart';
+import 'package:widgets/buttons.dart';
+import 'package:widgets/logoButton.dart';
+import 'package:widgets/sectionmenu.dart';
 
 class MobileBar extends PreferredSize {
   final VoidCallback? onPressed;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/content/heading.dart';
-import 'package:portfolio/service/sections.dart';
+import 'package:content/heading.dart';
+import 'package:service/sections.dart';
 
 class ContentBody extends StatelessWidget {
   const ContentBody({super.key});
