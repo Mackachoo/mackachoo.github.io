@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/content/heading.dart';
+import 'package:portfolio/main.dart';
 import 'package:portfolio/service/sections.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class ContentBody extends StatelessWidget {
-  final AutoScrollController controller;
-  const ContentBody({super.key, required this.controller});
+  const ContentBody({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ListView(
-      controller: controller,
+      controller: GlobalScrollController,
       padding: const EdgeInsets.all(8),
       children: <Widget>[const Heading()] +
           Sections.asMap()
@@ -19,7 +21,7 @@ class ContentBody extends StatelessWidget {
                     AutoScrollTag(
                       key: ValueKey(i),
                       index: i,
-                      controller: controller,
+                      controller: GlobalScrollController,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

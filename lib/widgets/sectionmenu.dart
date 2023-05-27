@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/main.dart';
 import 'package:portfolio/service/sections.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class SectionMenu extends StatefulWidget {
   final Axis axis;
-  final AutoScrollController controller;
 
-  const SectionMenu({super.key, required this.axis, required this.controller});
+  const SectionMenu({super.key, required this.axis});
 
   @override
   State<SectionMenu> createState() => _SectionMenuState();
@@ -27,11 +27,11 @@ class _SectionMenuState extends State<SectionMenu> {
 
     if (widget.axis == Axis.vertical) {
       return [
-        (animatedRender.size.width - buttonRender.size.width) / 2 - 5,
+        (animatedRender.size.width - buttonRender.size.width) / 2,
         buttonOffset.dy - animatedOffset.dy + buttonRender.size.height / 2 + 5
       ];
     } else {
-      return [buttonOffset.dx - animatedOffset.dx - 5, 15];
+      return [buttonOffset.dx - animatedOffset.dx, 20];
     }
   }
 
@@ -73,23 +73,28 @@ class _SectionMenuState extends State<SectionMenu> {
                           if (hover) {
                             visible = true;
                             width = (key.currentContext!.findRenderObject()
-                                        as RenderBox)
-                                    .size
-                                    .width +
-                                10;
+                                    as RenderBox)
+                                .size
+                                .width;
                             offset = getOffset(key, akey);
                           } else {
                             visible = false;
                           }
                         }),
-                        onTap: () {
-                          widget.controller.scrollToIndex(i,
-                              preferPosition: AutoScrollPosition.begin);
-                        },
-                        child: Text(section.title.toUpperCase(),
-                            style: TextStyle(
-                                color:
-                                    Theme.of(context).colorScheme.onSurface)),
+                        onTap: () {},
+                        child: TextButton(
+                          onPressed: () {
+                            GlobalScrollController.scrollToIndex(i,
+                                preferPosition: AutoScrollPosition.begin);
+                            if (widget.axis == Axis.vertical) {
+                              Navigator.pop(context);
+                            }
+                          },
+                          child: Text(section.title.toUpperCase(),
+                              style: TextStyle(
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface)),
+                        ),
                       ));
                 })
                 .values

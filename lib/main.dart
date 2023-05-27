@@ -5,8 +5,9 @@ import 'package:portfolio/content/socials.dart';
 import 'package:portfolio/widgets/contentbody.dart';
 import 'package:portfolio/widgets/logobutton.dart';
 import 'package:portfolio/widgets/navigation.dart';
-import 'package:portfolio/widgets/sectionmenu.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+
+late AutoScrollController GlobalScrollController;
 
 void main() {
   runApp(MyApp());
@@ -36,12 +37,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  late AutoScrollController controller;
-
   @override
   void initState() {
     super.initState();
-    controller = AutoScrollController(
+    GlobalScrollController = AutoScrollController(
         viewportBoundaryGetter: () =>
             Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
         axis: Axis.vertical);
@@ -81,10 +80,8 @@ class _HomeState extends State<Home> {
                     child: Center(
                       child: Column(
                         children: [
-                          SizedBox(
-                              height: 80,
-                              child: DesktopBar(controller: controller)),
-                          Expanded(child: ContentBody(controller: controller)),
+                          SizedBox(height: 80, child: DesktopBar()),
+                          Expanded(child: ContentBody()),
                         ],
                       ),
                     )),
@@ -98,8 +95,8 @@ class _HomeState extends State<Home> {
             key: key,
             backgroundColor: Theme.of(context).colorScheme.background,
             appBar: MobileBar(onPressed: () => key.currentState!.openDrawer()),
-            drawer: MobileDraw(controller: controller),
-            body: ContentBody(controller: controller),
+            drawer: MobileDraw(),
+            body: ContentBody(),
           );
         }
       },

@@ -26,8 +26,7 @@ class MobileBar extends PreferredSize {
 }
 
 class DesktopBar extends PreferredSize {
-  final AutoScrollController controller;
-  DesktopBar({super.key, required this.controller})
+  DesktopBar({super.key})
       : super(
           preferredSize: const Size.fromHeight(100),
           child: Padding(
@@ -36,10 +35,7 @@ class DesktopBar extends PreferredSize {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 const Spacer(flex: 1),
-                Flexible(
-                    flex: 6,
-                    child: SectionMenu(
-                        axis: Axis.horizontal, controller: controller)),
+                Flexible(flex: 6, child: SectionMenu(axis: Axis.horizontal)),
                 Flexible(flex: 2, child: EnquiryButton()),
               ],
             ),
@@ -48,10 +44,9 @@ class DesktopBar extends PreferredSize {
 }
 
 class MobileDraw extends Drawer {
-  final AutoScrollController controller;
-  MobileDraw({super.key, required this.controller})
+  MobileDraw({super.key})
       : super(
-            width: 100,
+            width: 120,
             child: Padding(
               padding: const EdgeInsets.all(10.0),
               child: Column(
@@ -60,11 +55,7 @@ class MobileDraw extends Drawer {
                   const LogoButton(
                     state: 'idleLogo',
                   ),
-                  Flexible(
-                      child: SectionMenu(
-                    axis: Axis.vertical,
-                    controller: controller,
-                  )),
+                  Flexible(child: SectionMenu(axis: Axis.vertical)),
                   const Spacer(flex: 2),
                   const Flexible(child: Socials()),
                   // SizedBox(height: 10)
