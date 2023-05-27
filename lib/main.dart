@@ -4,8 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/content/socials.dart';
 import 'package:portfolio/widgets/contentbody.dart';
 import 'package:portfolio/widgets/logobutton.dart';
-import 'package:portfolio/widgets/navigationbars.dart';
+import 'package:portfolio/widgets/navigation.dart';
 import 'package:portfolio/widgets/sectionmenu.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,6 +36,17 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  late AutoScrollController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = AutoScrollController(
+        viewportBoundaryGetter: () =>
+            Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+        axis: Axis.vertical);
+  }
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -69,8 +81,10 @@ class _HomeState extends State<Home> {
                     child: Center(
                       child: Column(
                         children: [
-                          SizedBox(height: 80, child: DesktopBar()),
-                          const Expanded(child: ContentBody()),
+                          SizedBox(
+                              height: 80,
+                              child: DesktopBar(controller: controller)),
+                          Expanded(child: ContentBody(controller: controller)),
                         ],
                       ),
                     )),
@@ -84,24 +98,8 @@ class _HomeState extends State<Home> {
             key: key,
             backgroundColor: Theme.of(context).colorScheme.background,
             appBar: MobileBar(onPressed: () => key.currentState!.openDrawer()),
-            drawer: const Drawer(
-                width: 100,
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      LogoButton(
-                        state: 'idleLogo',
-                      ),
-                      Flexible(child: SectionMenu(axis: Axis.vertical)),
-                      Spacer(flex: 2),
-                      Flexible(child: Socials()),
-                      // SizedBox(height: 10)
-                    ],
-                  ),
-                )),
-            body: const ContentBody(),
+            drawer: MobileDraw(controller: controller),
+            body: ContentBody(controller: controller),
           );
         }
       },

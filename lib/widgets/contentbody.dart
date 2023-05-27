@@ -1,41 +1,54 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/content/heading.dart';
 import 'package:portfolio/service/sections.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
 
 class ContentBody extends StatelessWidget {
-  const ContentBody({super.key});
+  final AutoScrollController controller;
+  const ContentBody({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return ListView(
+      controller: controller,
       padding: const EdgeInsets.all(8),
       children: <Widget>[const Heading()] +
-          Sections.map((section) {
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 20),
-                Row(
-                  children: [
-                    const SizedBox(width: 20),
-                    Text(section.title,
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.primary,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold)),
-                    const SizedBox(width: 20),
-                    Container(
-                      color: Theme.of(context).colorScheme.tertiary,
-                      height: 2,
-                      width: MediaQuery.of(context).size.width * 0.33,
+          Sections.asMap()
+              .map((i, section) => MapEntry(
+                    i,
+                    AutoScrollTag(
+                      key: ValueKey(i),
+                      index: i,
+                      controller: controller,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 20),
+                          Row(
+                            children: [
+                              const SizedBox(width: 20),
+                              Text(section.title,
+                                  style: TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
+                                      fontSize: 30,
+                                      fontWeight: FontWeight.bold)),
+                              const SizedBox(width: 20),
+                              Container(
+                                color: Theme.of(context).colorScheme.tertiary,
+                                height: 2,
+                                width: MediaQuery.of(context).size.width * 0.33,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          section.body ?? Container(),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                const SizedBox(height: 10),
-                section.body ?? Container(),
-              ],
-            );
-          }).toList(),
+                  ))
+              .values
+              .toList(),
     );
   }
 }
