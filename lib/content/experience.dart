@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:service/sections.dart';
+import 'package:portfolio/service/sections.dart';
 
 Section experience = Section(
   title: "Experience",
