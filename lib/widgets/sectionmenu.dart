@@ -90,10 +90,7 @@ class _SectionMenuState extends State<SectionMenu> {
                               Navigator.pop(context);
                             }
                           },
-                          child: Text(section.title.toUpperCase(),
-                              style: TextStyle(
-                                  color:
-                                      Theme.of(context).colorScheme.onSurface)),
+                          child: Text(section.title.toUpperCase()),
                         ),
                       ));
                 })

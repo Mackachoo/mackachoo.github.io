@@ -11,7 +11,7 @@ class MobileBar extends PreferredSize {
       : super(
           preferredSize: const Size.fromHeight(80),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.only(left: 10.0, right: 40),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -30,7 +30,7 @@ class DesktopBar extends PreferredSize {
       : super(
           preferredSize: const Size.fromHeight(100),
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(left: 10.0, right: 40),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

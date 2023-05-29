@@ -19,12 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Portfolio',
       theme: ThemeData(
-          colorScheme: darkColorScheme,
-          textTheme: GoogleFonts.karlaTextTheme()),
+        colorScheme: darkColorScheme,
+        fontFamily: GoogleFonts.karla().fontFamily,
+      ),
       // darkTheme: ThemeData(
       //     colorScheme: darkColorScheme,
       //     textTheme: GoogleFonts.karlaTextTheme()),
-      home: const Home(),
+      home: const SelectionArea(child: Home()),
     );
   }
 }
