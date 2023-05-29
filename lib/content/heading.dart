@@ -7,7 +7,7 @@ class Heading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
-        "Hey there, I'm",
+        "Hey there, I'm...",
         style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 30,
