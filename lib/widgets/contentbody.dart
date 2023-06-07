@@ -5,15 +5,14 @@ import 'package:portfolio/service/sections.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class ContentBody extends StatelessWidget {
-  const ContentBody({
-    super.key,
-  });
+  final EdgeInsets? padding;
+  const ContentBody({super.key, this.padding});
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       controller: GlobalScrollController,
-      padding: const EdgeInsets.all(8),
+      padding: padding,
       children: <Widget>[const Heading()] +
           Sections.asMap()
               .map((i, section) => MapEntry(

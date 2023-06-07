@@ -82,7 +82,8 @@ class _HomeState extends State<Home> {
                       child: Column(
                         children: [
                           SizedBox(height: 80, child: DesktopBar()),
-                          Expanded(child: ContentBody()),
+                          const Expanded(
+                              child: ContentBody(padding: EdgeInsets.all(60))),
                         ],
                       ),
                     )),
@@ -97,7 +98,7 @@ class _HomeState extends State<Home> {
             backgroundColor: Theme.of(context).colorScheme.background,
             appBar: MobileBar(onPressed: () => key.currentState!.openDrawer()),
             drawer: MobileDraw(),
-            body: ContentBody(),
+            body: const ContentBody(padding: EdgeInsets.all(30)),
           );
         }
       },
