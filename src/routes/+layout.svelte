@@ -1,11 +1,13 @@
 <script>
     import "../app.css";
-    import Header from "../components/Header.svelte";
-    import Footer from "../components/Footer.svelte";
+    import NavigationBar from "../components/Navigation.svelte";
+    import ContactButton from "../components/Contact.svelte";
 </script>
 
-<div class="relative flex flex-col max-w-screen-xl mx-auto w-full min-h-screen">
-    <Header />
-    <slot />
-    <Footer />
+<div class="relative flex flex-col mx-auto w-full">
+    <ContactButton />
+    <div class="max-w-4xl p-10">
+        <slot />
+    </div>
+    <NavigationBar />
 </div>
