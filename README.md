@@ -4,9 +4,9 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 
 ## Ideas
 
-Pixelation fade
-Experience filterable gallery
-Create a secret pixel game - ksp but 2d pixel game called Pixelfield
+* Pixelation fade
+* Experience filterable gallery
+* Create a secret pixel game - ksp but 2d pixel game called Pixelfield
 
 ## Developing
 
