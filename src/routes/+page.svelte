@@ -22,3 +22,9 @@
     <li>Adobe Suite (particularly Photoshop)</li>
     <li>Electronics (particularly drones and Pi 3)</li>
 </ul>
+
+<div class="flex">
+<button>LinkedIn</button>
+<button>Github</button>
+<button>CV PDF</button>
+</div>
