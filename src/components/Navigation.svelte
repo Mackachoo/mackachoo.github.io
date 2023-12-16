@@ -1,5 +1,6 @@
 <script>
     import { page } from "$app/stores";
+    import { base } from "$app/paths";
 
     let routes = [
         { name: "About Me", path: "/aboutme" },
@@ -19,9 +20,9 @@
     <div class="bg-rust h-16 flex flex-row justify-evenly items-center">
         {#each routes as route}
             {#if $page.url.pathname != route.path}
-                <a href={route.path} class="navbutton"> {route.name} </a>
+                <a href={base + route.path} class="navbutton"> {route.name} </a>
             {:else}
-                <a href="/" class="navbutton">
+                <a href="{base}/" class="navbutton">
                     <i class="fa-solid fa-chevron-down" />
                 </a>
             {/if}
