@@ -1,4 +1,14 @@
-<div class="w-full fixed bottom-0 z-index: 100">
+<script>
+    import { page } from "$app/stores";
+
+    let routes = [
+        { name: "About Me", path: "/aboutme" },
+        { name: "Portfolio", path: "/portfolio" },
+        { name: "Experience", path: "/experience" },
+    ];
+</script>
+
+<div class="w-full fixed bottom-0 z-20">
     <!-- Sky Effect-->
     <div class="sky-discrete opacity-10"></div>
     <div class="sky-discrete opacity-25"></div>
@@ -7,8 +17,14 @@
 
     <!-- Planet Navigation Bar -->
     <div class="bg-rust h-16 flex flex-row justify-evenly items-center">
-        <button class="navbutton"> About Me </button>
-        <button class="navbutton"> Portfolio </button>
-        <button class="navbutton"> Education and Experience </button>
+        {#each routes as route}
+            {#if $page.url.pathname != route.path}
+                <a href={route.path} class="navbutton"> {route.name} </a>
+            {:else}
+                <a href="/" class="navbutton">
+                    <i class="fa-solid fa-chevron-down" />
+                </a>
+            {/if}
+        {/each}
     </div>
 </div>

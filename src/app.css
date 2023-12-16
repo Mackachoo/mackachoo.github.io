@@ -14,7 +14,18 @@ h1,
 h2,
 h3 {
     font-family: 'Courier Prime', monospace;
+}
+
+h1 {
     font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
 }
 
 /* Navigation Bar */
@@ -32,5 +43,5 @@ h3 {
 }
 
 .navbutton {
-    @apply p-2 text-black border-[3px] hover:italic hover:bg-tan hover:bg-opacity-20
+    @apply p-2 text-black border-[3px] hover:italic hover:bg-tan hover:bg-opacity-20 w-32 text-center
 }

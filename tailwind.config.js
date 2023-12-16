@@ -11,7 +11,9 @@ export default {
       mirage: '#111b2a',
       rust: '#8e4549',
       tan: '#f39c54',
-      paradiso: '#347b83'
+      paradiso: '#347b83',
+      shuttle: '#646c7e',
+      moon: '#b5bfd7'
     }
   },
   plugins: []

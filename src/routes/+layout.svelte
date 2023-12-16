@@ -5,9 +5,11 @@
 </script>
 
 <div class="relative flex flex-col mx-auto w-full">
-    <ContactButton />
-    <div class="max-w-4xl p-10">
-        <slot />
+    <div class="flex flex-rowz">
+        <div class="max-w-4xl p-10">
+            <slot />
+        </div>
+        <ContactButton />
     </div>
     <NavigationBar />
 </div>
