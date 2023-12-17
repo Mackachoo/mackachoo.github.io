@@ -24,7 +24,7 @@
 </ul>
 
 <div class="flex">
-<button>LinkedIn</button>
-<button>Github</button>
-<button>CV PDF</button>
+    <button>LinkedIn</button>
+    <button>Github</button>
+    <button>CV PDF</button>
 </div>

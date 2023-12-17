@@ -7,13 +7,12 @@ html {
 }
 
 * {
-    font-family: 'Comforta', monospace;
+    font-family: 'Courier Prime', monospace;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Courier Prime', monospace;
+p,
+li {
+    font-family: 'Comforta', monospace;
 }
 
 h1 {
