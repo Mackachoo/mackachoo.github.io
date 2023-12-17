@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import "../app.css";
     import NavigationBar from "../components/Navigation.svelte";
     import ContactButton from "../components/Contact.svelte";
