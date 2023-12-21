@@ -4,9 +4,9 @@
     import ContactButton from "../components/Contact.svelte";
 </script>
 
-<div class="relative flex flex-col mx-auto w-full">
-    <div class="flex flex-rowz">
-        <div class="max-w-4xl p-10">
+<div class="relative flex flex-col items-center mx-auto w-full">
+    <div class="flex max-w-6xl">
+        <div class="p-10">
             <slot />
         </div>
         <ContactButton />

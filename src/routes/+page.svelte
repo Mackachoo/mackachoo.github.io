@@ -1,3 +1,7 @@
+<script lang="ts">
+    import cv from "$lib/cv.pdf";
+</script>
+
 <h1>Dan Buxton</h1>
 
 <p>
@@ -23,8 +27,10 @@
     <li>Electronics (particularly drones and Pi 3)</li>
 </ul>
 
-<div class="flex">
-    <button>LinkedIn</button>
-    <button>Github</button>
-    <button>CV PDF</button>
+<div class="flex m-10 justify-evenly">
+    <a href="https://www.linkedin.com/in/danbuxton/" class="navbutton"
+        >LinkedIn</a
+    >
+    <a href="https://github.com/Mackachoo/" class="navbutton">Github</a>
+    <a href={cv} target="_blank" class="navbutton">CV PDF</a>
 </div>

@@ -41,6 +41,19 @@ h3 {
     @apply bg-paradiso h-4;
 }
 
+.button {
+    @apply p-2 border-[3px] hover:italic w-32 text-center scale-90 sm:scale-100 line-clamp-1 truncate
+}
+
 .navbutton {
-    @apply p-2 text-black border-[3px] hover:italic hover:bg-tan hover:bg-opacity-20 w-32 text-center
+    @apply button text-black hover:bg-tan hover:bg-opacity-20
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

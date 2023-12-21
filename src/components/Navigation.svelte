@@ -17,15 +17,19 @@
     <div class="sky-discrete opacity-1"></div>
 
     <!-- Planet Navigation Bar -->
-    <div class="bg-rust h-16 flex flex-row justify-evenly items-center">
-        {#each routes as route}
-            {#if $page.url.pathname != route.path}
-                <a href={base + route.path} class="navbutton"> {route.name} </a>
-            {:else}
-                <a href="{base}/" class="navbutton">
-                    <i class="fa-solid fa-chevron-down" />
-                </a>
-            {/if}
-        {/each}
+    <div class="bg-rust h-16 flex justify-center items-center">
+        <div class="w-full 2xl:w-8/12 flex justify-evenly">
+            {#each routes as route}
+                {#if $page.url.pathname != route.path}
+                    <a href={base + route.path} class="navbutton">
+                        {route.name}
+                    </a>
+                {:else}
+                    <a href="{base}/" class="navbutton">
+                        <i class="fa-solid fa-chevron-down" />
+                    </a>
+                {/if}
+            {/each}
+        </div>
     </div>
 </div>
