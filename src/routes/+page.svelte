@@ -1,8 +1,16 @@
 <script lang="ts">
+    import me from "$lib/Home.jpg";
     import cv from "$lib/cv.pdf";
 </script>
 
-<h1>Dan Buxton</h1>
+<div class="flex flex-col-reverse md:flex-row md:items-end mb-10">
+    <img src={me} alt="Dan B" class="image md:w-80 mr-6" />
+    <h1>
+        Hi!
+        <br />
+        I'm <span class="text-tan">Dan Buxton</span>
+    </h1>
+</div>
 
 <p>
     I am a driven and creative individual with a passion for Physics, Computer
@@ -13,9 +21,20 @@
     contribution.
 </p>
 
-<h2 class="pt-10">Experienced Technologies</h2>
+<div class="flex md:mx-10 my-10 justify-evenly border-tan text-tan">
+    <a
+        href="https://www.linkedin.com/in/danbuxton/"
+        target="_blank"
+        class="button">LinkedIn</a
+    >
+    <a href="https://github.com/Mackachoo/" target="_blank" class="button"
+        >Github</a
+    >
+    <a href={cv} target="_blank" class="button">CV PDF</a>
+</div>
 
-<ul class="grid md:grid-cols-2 list-disc list-inside pl-2">
+<h2>Experienced Technologies</h2>
+<ul class="grid md:grid-cols-2 list-disc list-inside pl-2 mb-24">
     <li>Javascript (Svelte, React Native, Tailwind)</li>
     <li>Dart and Flutter</li>
     <li>C# and Unity</li>
@@ -26,11 +45,3 @@
     <li>Adobe Suite (particularly Photoshop)</li>
     <li>Electronics (particularly drones and Pi 3)</li>
 </ul>
-
-<div class="flex m-10 justify-evenly">
-    <a href="https://www.linkedin.com/in/danbuxton/" class="navbutton"
-        >LinkedIn</a
-    >
-    <a href="https://github.com/Mackachoo/" class="navbutton">Github</a>
-    <a href={cv} target="_blank" class="navbutton">CV PDF</a>
-</div>

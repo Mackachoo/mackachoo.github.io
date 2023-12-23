@@ -12,20 +12,30 @@ html {
 
 p,
 li {
-    font-family: 'Comforta', monospace;
+    font-family: 'Sono', monospace;
+    font-size: large;
+}
+
+p {
+    text-align: justify;
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 h3 {
-    font-size: large;
+    font-size: x-large;
 }
+
+.image {
+    @apply border-paradiso border-b-4 border-l-4 opacity-70
+}
+
 
 /* Navigation Bar */
 .sky-continuous {
@@ -42,11 +52,11 @@ h3 {
 }
 
 .button {
-    @apply p-2 border-[3px] hover:italic w-32 text-center scale-90 sm:scale-100 line-clamp-1 truncate
+    @apply p-2 border-[3px] hover:italic text-center scale-90 sm:scale-100 line-clamp-1 truncate
 }
 
 .navbutton {
-    @apply button text-black hover:bg-tan hover:bg-opacity-20
+    @apply button w-32 text-black hover:bg-tan hover:bg-opacity-20
 }
 
 *::-webkit-scrollbar {

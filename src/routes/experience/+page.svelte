@@ -1,5 +1,7 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import Accordion from "../../components/Accordion.svelte";
+    import { slide, fade } from "svelte/transition";
     export let data: PageData;
 
     function updateFilters(filter: string) {
@@ -8,27 +10,38 @@
                 return ele != filter;
             });
         } else {
-            filteredBy.push(filter);
-            filteredBy = filteredBy;
+            for (let id in allFilters) {
+                if (allFilters[id].includes(filter)) {
+                    filteredBy.push(filter);
+                    filteredBy = filteredBy.filter(
+                        (x) => !allFilters[id].includes(x) || x === filter,
+                    );
+                }
+            }
         }
     }
 
-    let allFilters: Array<string> = ["Hospitality", "Tech", "Volunteer"];
-    let filteredBy: Array<string> = [];
+    let allFilters: Record<string, string[]> = {
+        industry: ["Hospitality", "Tech"],
+        type: ["Full-Time", "Volunteer", "Internship"],
+    };
+    let filteredBy: string[] = [];
+    let opens: boolean[] = [];
 </script>
 
 <!-- Filter Bar -->
-<div class="w-full flex flex-row text-rust">
+
+<div class=" flex flex-row text-tan">
     <i class="text-2xl mx-4 mt-2 fa-sharp fa-solid fa-chevron-right"></i>
     <div class="flex flex-wrap">
-        {#each allFilters as filter}
+        {#each allFilters.industry.concat(allFilters.type) as filter}
             <button
                 type="button"
-                class={"button mx-2 sm:mx-4 sm:p-2 my-1 p-1 text-sm hover:italic font-bold " +
+                class={"button mx-1 md:mx-4 md:p-2 my-1 p-1 text-sm hover:italic font-bold " +
                     String(
                         filteredBy.includes(filter)
                             ? "text-tan italic"
-                            : "text-rust",
+                            : "text-moon",
                     )}
                 on:click={() => {
                     updateFilters(filter);
@@ -39,38 +52,50 @@
 </div>
 
 <!-- Experience List -->
-<div class="pt-5 pb-20">
-    {#each data.experiences as experience}
-        {#if filteredBy.length === 0 || filteredBy.filter( (value) => experience.filters.includes(value), ).length > 0}
+<div class="mt-5 mb-20 border-tan border-t-4 p-4">
+    {#each data.experiences as experience, i}
+        {#if filteredBy.length === 0 || filteredBy.filter( (x) => experience.filters.includes(x), ).length === filteredBy.length}
             <div
-                class="border-paradiso border-b-[3px] border-l-[3px] p-2 mb-5 md:mb-10"
+                class={"mb-4 pl-1 border-l-2 " +
+                    String(opens[i] ? "border-tan" : "border-moon")}
+                transition:slide
             >
-                <div class="flex justify-between">
-                    <div class="flex">
+                <Accordion bind:open={opens[i]}>
+                    <div slot="head" class="flex">
                         <img
                             src={experience.image}
                             alt="{experience.company} logo"
                             class="h-16 p-3"
                         />
-                        <div>
-                            <h2 class="text-paradiso">
-                                {experience.company}
-                                {experience.companydesc != ""
+                        <div class="text-left">
+                            <h2 class="text-rust">
+                                {experience.position}
+                            </h2>
+                            <p
+                                class={"italic pb-2 pl-2 " +
+                                    String(
+                                        opens[i]
+                                            ? "text-shuttle"
+                                            : "text-mooon",
+                                    )}
+                            >
+                                {experience.dates} with {experience.company}
+                                {experience.companydesc
                                     ? "[" + experience.companydesc + "]"
                                     : ""}
-                            </h2>
-                            <p class="italic p-2">
-                                {experience.position}
-                                <i class="fa-sharp fa-solid fa-angle-right" />
-                                {experience.dates}
                             </p>
                         </div>
                     </div>
-                    <button class="scale-150 m-5">
-                        <i class="fa-solid fa-chevron-down" />
-                    </button>
-                </div>
-                {experience.description}
+                    <div slot="details">
+                        <p class="pl-5 text-moon">
+                            {experience.description}
+                        </p>
+                        <p class="pt-2 pl-10 text-shuttle italic">
+                            [ {#each experience.filters as tag, i}{tag}{#if i != experience.filters.length - 1}{", "}{/if}{/each}
+                            ]
+                        </p>
+                    </div>
+                </Accordion>
             </div>
         {/if}
     {/each}

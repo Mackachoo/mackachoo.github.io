@@ -6,14 +6,14 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: '#000',
-      white: '#fff',
-      mirage: '#111b2a',
-      rust: '#8e4549',
-      tan: '#f39c54',
-      paradiso: '#347b83',
-      shuttle: '#646c7e',
-      moon: '#b5bfd7'
+      rust: '#8e4549',      // Primary
+      tan: '#f39c54',       // Secondary
+      paradiso: '#347b83',  // Tertiary
+      white: '#fff',        // Text
+      moon: '#b5bfd7',      // Text Alt
+      black: '#000',        // Text Inverted
+      shuttle: '#646c7e',   // Subtext
+      mirage: '#111b2a',    // Background
     }
   },
   plugins: []

@@ -1,15 +1,21 @@
 <script lang="ts">
+    export let data;
     import "../app.css";
+    import { slide, fade } from "svelte/transition";
+
     import NavigationBar from "../components/Navigation.svelte";
     import ContactButton from "../components/Contact.svelte";
 </script>
 
-<div class="relative flex flex-col items-center mx-auto w-full">
-    <div class="flex max-w-6xl">
-        <div class="p-10">
+<div class="flex flex-col items-center">
+    <ContactButton />
+    {#key data.pathname}
+        <div
+            class="w-full max-w-6xl md:p-10 scale-90 md:scale-100"
+            transition:slide
+        >
             <slot />
         </div>
-        <ContactButton />
-    </div>
+    {/key}
     <NavigationBar />
 </div>
