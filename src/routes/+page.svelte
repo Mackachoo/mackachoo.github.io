@@ -3,7 +3,7 @@
     import cv from "$lib/cv.pdf";
 </script>
 
-<div class="flex flex-col-reverse sm:flex-row sm:items-end mb-10">
+<div class="flex flex-col-reverse sm:flex-row sm:items-end mb-6">
     <img src={me} alt="Dan B" class="image sm:w-80 mr-6" />
     <h1>
         Hi!
