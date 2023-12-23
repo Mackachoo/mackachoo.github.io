@@ -10,10 +10,7 @@
 <div class="flex flex-col items-center">
     <ContactButton />
     {#key data.pathname}
-        <div
-            class="w-full max-w-6xl md:p-10 scale-90 md:scale-100"
-            transition:slide
-        >
+        <div class="w-full max-w-6xl p-5 md:p-10" transition:slide>
             <slot />
         </div>
     {/key}

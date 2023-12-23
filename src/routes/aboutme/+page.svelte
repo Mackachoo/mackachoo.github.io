@@ -9,11 +9,11 @@
 
 <div class="flex flex-col">
     <!-- A Bit About Me -->
-    <div class="my-5">
+    <div class="mb-5">
         <img
             src={graduation}
             alt="Graduation"
-            class="image w-full h-96 md:h-full object-cover md:w-1/2 md:float-right md:ml-10 mt-2 mb-5"
+            class="image w-full h-96 md:h-full object-cover md:w-1/3 md:float-right md:ml-10 md:mt-2 mb-5"
         />
         <h2>A Bit About Me</h2>
         <div class="md:w-1/2 md:pr-10">
@@ -41,12 +41,12 @@
 
     <!-- Title and Buttons -->
     <div
-        class="flex lg:flex-row flex-col justify-between lg:border-tan lg:border-b-4 mb-5"
+        class="flex lg:flex-row flex-col justify-between lg:border-tan lg:border-b-4 mb-2 md:mb-5"
     >
         <h2 class="border-tan border-b-4 lg:border-b-0">
             Education and Qualifications
         </h2>
-        <div class="flex justify-between space-x-6 scale-75">
+        <div class="flex justify-between space-x-6 scale-75 mt-3 md:mt-0">
             <button
                 on:click={() => {
                     view = "Education";
@@ -80,12 +80,12 @@
                     <Accordion>
                         <div
                             slot="head"
-                            class="flex justify-between items-center"
+                            class="flex flex-col md:flex-row justify-between items-start md:items-center"
                         >
                             <h3 class="mr-5 text-rust text-left">
                                 {item.institute}
                             </h3>
-                            <p class="italic text-moon text-right">
+                            <p class="italic text-moon text-left md:text-right">
                                 {item.course ? item.course + " with" : ""}
                                 {item.grade}
                             </p>
@@ -112,7 +112,7 @@
                         <img
                             src={item.icon}
                             alt={item.institute}
-                            class="w-16 mx-4 p-1"
+                            class="w-16 mx-0 md:mx-4 p-1 scale-90 md:scale-100"
                         />
                         <h3 class="mr-5 text-rust">
                             {item.name}
