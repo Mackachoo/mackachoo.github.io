@@ -1,5 +1,5 @@
 <script lang="ts">
-    import me from "$lib/Home.jpg";
+    import me from "$lib/Home.webp";
     import cv from "$lib/cv.pdf";
 </script>
 
@@ -33,7 +33,7 @@
     <a href={cv} target="_blank" class="button">CV PDF</a>
 </div>
 
-<h2 class="border-tan border-b-4">Skills</h2>
+<h2 class="border-tan border-b-4 mb-3">Skills</h2>
 <ul class="grid sm:grid-cols-2 list-disc list-inside pl-2 mb-10">
     <li>Creativity</li>
     <li>Organisation</li>
@@ -41,7 +41,7 @@
     <li>Adaptability</li>
 </ul>
 
-<h2 class="border-tan border-b-4">Technologies</h2>
+<h2 class="border-tan border-b-4 mb-3">Technologies</h2>
 <ul class="grid sm:grid-cols-2 list-disc list-inside pl-2 mb-24">
     <li>Javascript [Svelte, React Native, Tailwind]</li>
     <li>Dart and Flutter</li>

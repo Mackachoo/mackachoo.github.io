@@ -1,5 +1,5 @@
 <script lang="ts">
-    import graduation from "$lib/About.jpg";
+    import graduation from "$lib/About.webp";
     import Accordion from "../../components/Accordion.svelte";
     import type { PageData } from "./$types";
     export let data: PageData;
