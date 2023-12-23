@@ -21,7 +21,7 @@
     contribution.
 </p>
 
-<div class="flex md:mx-10 my-10 justify-evenly border-tan text-tan">
+<div class="flex md:mx-10 my-6 justify-evenly border-tan text-tan">
     <a
         href="https://www.linkedin.com/in/danbuxton/"
         target="_blank"
@@ -34,7 +34,7 @@
 </div>
 
 <h2 class="border-tan border-b-4 mb-3">Skills</h2>
-<ul class="grid sm:grid-cols-2 list-disc list-inside pl-2 mb-10">
+<ul class="grid sm:grid-cols-2 list-disc list-inside pl-2 mb-6">
     <li>Creativity</li>
     <li>Organisation</li>
     <li>Leadership</li>
