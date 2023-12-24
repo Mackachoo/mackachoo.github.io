@@ -5,9 +5,9 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/mackachooo.github.io' : '',
-		}
+		// paths: {
+		// 	base: process.env.NODE_ENV === 'production' ? '/mackachoo.github.io' : '',
+		// }
 	}
 
 };
