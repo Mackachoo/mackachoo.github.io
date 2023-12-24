@@ -1,4 +1,4 @@
-import{s as I,n as _}from"../chunks/scheduler.1b5c9679.js";import{S as q,i as U,g as m,s as p,h as u,z as h,c as v,k as b,a as i,f as l}from"../chunks/index.e6d018ca.js";const A=""+new URL("../assets/Home.27a2de35.webp",import.meta.url).href,B=""+new URL("../assets/cv.cf7d7b7d.pdf",import.meta.url).href;function F(T){let a,k=`<img src="${A}" alt="Dan B" class="image sm:w-80 mr-6"/> <h1>Hi!
+import{s as I,n as _}from"../chunks/scheduler.47e7a1fa.js";import{S as q,i as U,g as m,s as p,h as u,z as h,c as v,k as b,a as i,f as l}from"../chunks/index.dcccc6f1.js";const A=""+new URL("../assets/Home.27a2de35.webp",import.meta.url).href,B=""+new URL("../assets/cv.cf7d7b7d.pdf",import.meta.url).href;function F(T){let a,k=`<img src="${A}" alt="Dan B" class="image sm:w-80 mr-6"/> <h1>Hi!
         <br/>
         I&#39;m <span class="text-tan">Dan Buxton</span></h1>`,f,d,g=`I am a driven and creative individual with a passion for Physics, Computer
     Science, and Mathematics. I have a strong ability to learn and adapt
