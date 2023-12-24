@@ -59,6 +59,10 @@ h3 {
     @apply button w-32 text-black hover:bg-tan hover:bg-opacity-20
 }
 
+.form {
+    @apply text-white bg-mirage w-full border-l-2 border-b-2 border-tan
+}
+
 *::-webkit-scrollbar {
     display: none;
 }
