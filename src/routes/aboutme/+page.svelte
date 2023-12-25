@@ -95,7 +95,7 @@
                                 {item.dates}
                             </p>
                             {#each item.extras as extra}
-                                <li class="text-moon">{extra}</li>
+                                <li class="text-moon pl-4">{extra}</li>
                             {/each}
                         </div>
                     </Accordion>
