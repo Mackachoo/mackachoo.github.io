@@ -20,7 +20,7 @@
     <div class="bg-rust h-16 flex justify-center items-center">
         <div class="w-full 2xl:w-8/12 flex justify-evenly">
             {#each routes as route}
-                {#if $page.url.pathname != route.path}
+                {#if !$page.url.pathname.includes(route.path)}
                     <a href={base + route.path} class="navbutton">
                         {route.name}
                     </a>

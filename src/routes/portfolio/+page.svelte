@@ -1,1 +1,4 @@
-Work in progress, see CV for details.
+<script lang="ts">
+    import { goto } from "$app/navigation";
+    goto("/portfolio/logaroo");
+</script>
