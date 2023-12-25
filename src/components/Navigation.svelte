@@ -9,7 +9,7 @@
     ];
 </script>
 
-<div class="w-full fixed bottom-0 z-20">
+<div class="w-full fixed bottom-0 z-50">
     <!-- Sky Effect-->
     <div class="sky-discrete opacity-10"></div>
     <div class="sky-discrete opacity-25"></div>

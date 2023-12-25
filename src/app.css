@@ -63,11 +63,18 @@ h3 {
     @apply text-white bg-mirage w-full border-l-2 border-b-2 border-tan
 }
 
-*::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-* {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+::-webkit-scrollbar-track {
+    @apply bg-transparent -z-50
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-shuttle
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-paradiso
 }

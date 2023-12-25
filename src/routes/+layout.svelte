@@ -10,8 +10,13 @@
 <div class="flex flex-col items-center">
     <ContactButton />
     {#key data.pathname}
-        <div class="w-full max-w-6xl p-5 md:p-10" transition:slide>
-            <slot />
+        <div
+            class="overflow-y-scroll h-screen w-full flex flex-col items-center"
+            transition:slide
+        >
+            <div class="w-full max-w-6xl p-5 md:p-10">
+                <slot />
+            </div>
         </div>
     {/key}
     <NavigationBar />
@@ -20,6 +25,6 @@
     <div
         class="fixed bottom-0 right-0 bg-button z-50 text-black px-2 opacity-0 hover:opacity-100"
     >
-        1.2.2
+        1.2.3
     </div>
 </div>
