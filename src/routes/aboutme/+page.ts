@@ -3,6 +3,7 @@ import uoe from '$lib/aboutme/uoe.png'
 import kx from '$lib/aboutme/kx.png'
 import flyingfish from '$lib/aboutme/flyingfish.png'
 import dofe from '$lib/aboutme/dofe.png'
+import uos from '$lib/aboutme/uos.png'
 
 export const load: PageLoad = ({ params }) => {
     return {
@@ -40,6 +41,10 @@ export const load: PageLoad = ({ params }) => {
             name: "STCW Maritime Certification",
             institute: "Flying Fish",
             icon: flyingfish
+        }, {
+            name: "ECS Summer Supercomputing Course",
+            institute: "University of Southampton",
+            icon: uos
         }, {
             name: "Duke of Edinburgh",
             level: "Gold, Silver and Bronze",
