@@ -13,7 +13,7 @@ html {
 p,
 li {
     font-family: 'Sono', monospace;
-    font-size: base;
+    @apply text-sm sm:text-base
 }
 
 p {
@@ -21,15 +21,15 @@ p {
 }
 
 h1 {
-    font-size: xx-large;
+    @apply text-2xl
 }
 
 h2 {
-    font-size: x-large;
+    @apply text-lg sm:text-xl
 }
 
 h3 {
-    font-size: large;
+    @apply text-base sm:text-lg
 }
 
 .image {
@@ -64,7 +64,7 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    @apply w-[5px] sm:w-[10px]
 }
 
 ::-webkit-scrollbar-track {

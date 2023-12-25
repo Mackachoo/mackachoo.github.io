@@ -14,7 +14,7 @@
             class="overflow-y-scroll h-screen w-full flex flex-col items-center"
             transition:slide
         >
-            <div class="w-full max-w-6xl p-5 md:p-10">
+            <div class="w-full max-w-6xl p-5 sm:p-10">
                 <slot />
             </div>
         </div>
@@ -25,6 +25,6 @@
     <div
         class="fixed bottom-0 right-0 bg-button z-50 text-black px-2 opacity-0 hover:opacity-100"
     >
-        1.3.2
+        1.3.3
     </div>
 </div>

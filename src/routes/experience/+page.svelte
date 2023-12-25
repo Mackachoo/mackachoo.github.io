@@ -37,7 +37,7 @@
         {#each allFilters.industry.concat(allFilters.type) as filter}
             <button
                 type="button"
-                class={"button mx-1 md:mx-4 md:p-2 my-1 p-1 text-sm hover:italic font-bold " +
+                class={"button mx-1 sm:mx-2 md:mx-4 md:p-2 my-1 p-1 text-sm hover:italic font-bold " +
                     String(
                         filteredBy.includes(filter)
                             ? "text-tan italic"
