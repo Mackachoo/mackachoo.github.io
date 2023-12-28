@@ -4,7 +4,7 @@
     import Reel from "../../components/Reel.svelte";
 </script>
 
-<div class="w-full overflow-x-visible flex space-x-6">
+<div class="w-full overflow-x-auto flex space-x-6 p-2">
     <!-- Side scrollable project gallery -->
     <!-- Foreach subpage data show icon/name for button (maybe with small description)-->
     {#each Object.entries(projects) as [key, data]}
