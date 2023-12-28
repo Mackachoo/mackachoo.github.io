@@ -1,13 +1,16 @@
 <script lang="ts">
     // Get list of subpages and their exported data
+    import { projects } from "$lib/portfolio/projects";
+    import Reel from "../../components/Reel.svelte";
 </script>
 
-<div class="w-full absolute left-0 top-0">
+<div class="w-full overflow-x-visible flex space-x-6">
     <!-- Side scrollable project gallery -->
-    <div class="flex p-5">
-        <!-- Foreach subpage data show icon/name for button (maybe with small description)-->
-    </div>
+    <!-- Foreach subpage data show icon/name for button (maybe with small description)-->
+    {#each Object.entries(projects) as [key, data]}
+        <Reel {key} {data} />
+    {/each}
 </div>
-<div class="pt-20">
+<div class="pt-5">
     <slot />
 </div>

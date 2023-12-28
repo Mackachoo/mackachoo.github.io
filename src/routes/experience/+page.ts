@@ -1,3 +1,4 @@
+import type { PageLoad } from './$types';
 import eyeofthewind from "$lib/experience/eyeofthewind.png";
 import sage from "$lib/experience/sage.png";
 import spaceworks from "$lib/experience/spaceworks.png";
@@ -10,9 +11,6 @@ import yogscast from "$lib/experience/yogscast.png";
 import qazaqair from "$lib/experience/qazaqair.png";
 import wessexwater from "$lib/experience/wessexwater.png";
 import bradfield from "$lib/experience/bradfield.png";
-
-import type { PageLoad } from './$types';
-import { space } from "postcss/lib/list";
 
 export const load: PageLoad = ({ params }) => {
     return {
