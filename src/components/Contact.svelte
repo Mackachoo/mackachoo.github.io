@@ -1,28 +1,27 @@
 <script script="ts">
     // @ts-nocheck
-
+    import moon from "$lib/moon.svg";
+    import Moon from "./Moon.svelte";
     let dialog;
+
+    function showModal() {
+        dialog.showModal();
+    }
 </script>
 
 <div
-    class="bg-moon fixed right-0 grid items-center justify-center
-    m-8 h-10 w-10 z-10 animate-pulse hover:animate-none"
+    class="fixed right-0 grid items-center justify-center
+    m-10 h-10 w-10 z-10 animate-pulse hover:animate-none"
 >
     <div class="group relative">
-        <button
-            data-tooltip-target="tooltip-dark"
-            data-tooltip-placement="bottom"
-            type="button"
-            on:click={() => {
-                dialog.showModal();
-            }}
-        >
-            <i class="fa-solid fa-sharp fa-terminal text-shuttle m-2" />
+        <button class="w-12" on:click={showModal}>
+            <!-- <i class="fa-solid fa-sharp fa-terminal text-shuttle m-2" /> -->
+            <Moon />
         </button>
         <span
             class="group-hover:opacity-100 transition-opacity
     bg-shuttle p-2 text-sm text-mooon absolute left-1/2
-    -translate-x-1/2 translate-y-full opacity-0 m-3 mx-auto">Contact</span
+    -translate-x-1/2 translate-y-full opacity-0 m-5 mx-auto">Contact</span
         >
     </div>
 </div>
@@ -41,18 +40,6 @@
                 href="tel:+447738612600">+44 778612600</a
             >
         </div>
-
-        <!-- svelte-ignore a11y-missing-attribute -->
-        <!-- <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSePEvpWma6fBbSMWnx7fMzyoIzy4e3hg4TUJZ9UF8xIORpG1A/viewform?embedded=true"
-            width="640"
-            height="540"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-        >
-            Loading…
-        </iframe> -->
 
         <form
             action="https://api.staticforms.xyz/submit"

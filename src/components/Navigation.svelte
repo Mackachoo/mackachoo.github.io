@@ -32,4 +32,7 @@
             {/each}
         </div>
     </div>
+    <svg class="absolute" height="64" width="10000">
+        <rect width="1000" height="30" fill="#FFFFF" />
+    </svg>
 </div>

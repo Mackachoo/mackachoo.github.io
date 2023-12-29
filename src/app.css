@@ -78,3 +78,28 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
     @apply bg-paradiso
 }
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    @apply w-2/3 h-6 bg-moon opacity-70
+}
+
+.slider:hover {
+    @apply opacity-100
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    @apply bg-paradiso h-6 w-6
+}
+
+.slider::-moz-range-thumb {
+    cursor: pointer;
+    @apply bg-paradiso h-6 w-6
+}
