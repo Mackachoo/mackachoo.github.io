@@ -18,7 +18,7 @@
 
     <!-- Planet Navigation Bar -->
     <div class="bg-rust h-16 flex justify-center items-center">
-        <div class="w-full 2xl:w-8/12 flex justify-evenly">
+        <div class="w-full 2xl:w-8/12 flex justify-evenly z-20">
             {#each routes as route}
                 {#if !$page.url.pathname.includes(route.path)}
                     <a href={base + route.path} class="navbutton">
@@ -32,7 +32,41 @@
             {/each}
         </div>
     </div>
-    <svg class="absolute" height="64" width="10000">
-        <rect width="1000" height="30" fill="#FFFFF" />
-    </svg>
+    <!-- <svg class="absolute bottom-0 left-0 z-10" height="64" width="10000">
+        <rect
+            width="1000"
+            height="30"
+            transform="translate(0 10)"
+            fill="#FFFFF"
+            opacity="0.5"
+        />
+        <rect
+            width="1000"
+            height="30"
+            transform="translate(40 26)"
+            fill="#FFFFF"
+            opacity="0.5"
+        />
+        <rect
+            width="1000"
+            height="30"
+            transform="translate(0 26)"
+            fill="#FFFFF"
+            opacity="0.5"
+        />
+        <rect
+            width="1000"
+            height="30"
+            transform="translate(0 260)"
+            fill="#FFFFF"
+            opacity="0.5"
+        />
+        <rect
+            width="1000"
+            height="30"
+            transform="translate(60 20)"
+            fill="#FFFFF"
+            opacity="0.5"
+        />
+    </svg> -->
 </div>
