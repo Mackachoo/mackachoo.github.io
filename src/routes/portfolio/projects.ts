@@ -7,41 +7,82 @@ import grovers from "$lib/portfolio/grovers.png";
 import genetic from "$lib/portfolio/genetic.svg";
 import medical from "$lib/portfolio/medical.svg";
 
-export let projects: Record<string, Record<string, any>> = {
-    logaroo: {
+type Project = {
+    title: string;
+    logo: string;
+    snippet: string;
+    desc: string;
+    link: string;
+    colour: string;
+    open: boolean;
+};
+
+export let projects: Project[] = [
+    {
         title: "Logaroo",
-        icon: logaroo,
+        logo: logaroo,
         snippet:
             "A Flutter and Firebase app for tracking Skydiving jumps and manifesting.",
-        component: ""
-    }, wikisearch: {
+        desc: "",
+        link: "",
+        colour: "#2c7eb4",
+        open: true
+    }, {
         title: "WikiSearch",
-        icon: wikisearch,
-        snippet: "A Search engine for Wikipedia with AI, built using React and Python as the TTDS Project"
-    }, masters: {
+        logo: wikisearch,
+        snippet: "A Search engine for Wikipedia with AI, built using React and Python as the TTDS Project",
+        desc: "",
+        link: "",
+        colour: "#99903e",
+        open: false
+    }, {
         title: "Simulating 2D Magnetic Materials for Reservoir Computing",
-        icon: masters,
-        snippet: ""
-    }, genetic: {
+        logo: masters,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#8d1616",
+        open: false
+    }, {
         title: "Genetic Algorithms",
-        icon: genetic,
-        snippet: ""
-    }, dissertation: {
+        logo: genetic,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#277e12",
+        open: false
+    }, {
         title: "Dynamic Simulation of Bacteria for powering Micro Machines",
-        icon: dissertation,
-        snippet: ""
-    }, newadrift: {
+        logo: dissertation,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#332ab1",
+        open: false
+    }, {
         title: "A New Adrift",
-        icon: newadrift,
-        snippet: ""
-    }, grovers: {
+        logo: newadrift,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#0ac4b4",
+        open: false
+    }, {
         title: "Grover's Algorithm Simulation",
-        icon: grovers,
-        snippet: ""
-    }, hackathons: {
+        logo: grovers,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#6d15a0",
+        open: false
+    }, {
         title: "Medical Computing Hackathons",
-        icon: medical,
-        snippet: ""
+        logo: medical,
+        snippet: "",
+        desc: "",
+        link: "",
+        colour: "#b825bd",
+        open: false
     },
 
-}
+]
