@@ -25,6 +25,6 @@
     <div
         class="fixed bottom-0 right-0 bg-button z-50 text-black px-2 opacity-0 hover:opacity-100"
     >
-        2.0.1
+        3.0.0
     </div>
 </div>
