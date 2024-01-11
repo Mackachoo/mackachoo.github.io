@@ -55,7 +55,7 @@
             />
             <!-- Required -->
             <div class=" w-full">
-                <label>Name</label>
+                <label for="name">Name</label>
                 <div class="control">
                     <input
                         class="input form w-full text-sm md:text-base p-1"
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="w-full">
-                <label>Contact</label>
+                <label for="$contact">Contact</label>
                 <div class="control">
                     <input
                         class="input form w-full text-sm md:text-base p-1"
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="w-full">
-                <label>Message</label>
+                <label for="message">Message</label>
                 <div class="control">
                     <textarea
                         class="textarea form w-full text-sm md:text-base p-1"
