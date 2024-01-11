@@ -13,7 +13,6 @@ html {
 p,
 li {
     font-family: 'Sono', monospace;
-    white-space: pre-wrap;
     @apply text-sm sm:text-base
 }
 

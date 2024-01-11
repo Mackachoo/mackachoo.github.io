@@ -34,10 +34,13 @@
 </script>
 
 <div class="relative">
-    <div class="absolute p-10 w-full">
+    <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+      w-4/5"
+    >
         <slot />
     </div>
-    <div class="">
+    <div>
         <svg viewBox="0 0 600 600">
             {#if secondary}
                 <rect width="600" height="600" fill={secondary} />
