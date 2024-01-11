@@ -26,15 +26,15 @@ export const load = (async () => {
                 logo: logaroo,
                 snippet:
                     "A Flutter and Firebase app for tracking Skydiving jumps and manifesting.",
-                desc: "",
+                desc: "\t-\tBuilt a reactive logbook app using Flutter for deployment on Android, iOS, and web.\n\t-\tImplemented a backend with Firebase for user authentication and a NoSQL database.",
                 link: "",
-                colour: "#2c7eb4",
+                colour: "#004f53",
                 open: true
             }, {
                 title: "WikiSearch",
                 logo: wikisearch,
                 snippet: "A Search engine for Wikipedia with AI, built using React and Python as the TTDS Project",
-                desc: "",
+                desc: "\t-\tDeveloped an inverse positional index to enable IR and TF-IDF searches on Wikipedia.\n\t-\tUtilised word embedding search and the GPT-3 API for question answering.\n\t-\tOptimized inital Python backend using C++ libraries, accelerating responces by 100 timesand connected to React front end with Django.",
                 link: "",
                 colour: "#99903e",
                 open: false

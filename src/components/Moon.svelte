@@ -31,11 +31,10 @@
     for (let i = 0; i < Math.floor(2 + Math.random() * 4); i++) {
         craters.push(makeCrater());
     }
-    console.log(craters);
 </script>
 
 <div class="relative">
-    <div class="absolute p-10">
+    <div class="absolute p-10 w-full">
         <slot />
     </div>
     <div class="">

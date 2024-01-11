@@ -13,6 +13,7 @@ html {
 p,
 li {
     font-family: 'Sono', monospace;
+    white-space: pre-wrap;
     @apply text-sm sm:text-base
 }
 
@@ -36,6 +37,15 @@ h3 {
     @apply border-paradiso border-b-4 border-l-4 opacity-70
 }
 
+.fade-in {
+    opacity: 60;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+    opacity: 30;
+    transition: opacity 0.3s ease-in-out;
+}
 
 /* Navigation Bar */
 .sky-continuous {
