@@ -28,7 +28,7 @@ export const load = (async () => {
                     "A Flutter and Firebase app for tracking Skydiving jumps and manifesting.",
                 desc: "\t-\tBuilt a reactive logbook app using Flutter for deployment on Android, iOS, and web.\n\t-\tImplemented a backend with Firebase for user authentication and a NoSQL database.",
                 link: "",
-                colour: "#004f53",
+                colour: "#00696f",
                 open: true
             }, {
                 title: "WikiSearch",
