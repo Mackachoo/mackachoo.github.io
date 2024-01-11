@@ -1,10 +1,12 @@
 <script lang="ts">
     import Moon from "../../components/Moon.svelte";
     import { blur, fly } from "svelte/transition";
+    import { onMount } from "svelte";
     import type { PageData } from "./$types";
     import shortcut from "$lib/shortcut.svg";
     export let data: PageData;
 
+    let moonRef: HTMLDivElement[] = [];
     $: outerWidth = 0;
 
     let projects = data.projects;
@@ -17,6 +19,13 @@
             "p-10 ml-4 lg:p-20",
         ][Math.floor(random * 100) % 5];
     }
+
+    onMount(() => {
+        projects.forEach((project, index) => {
+            let speed = 5 + Math.floor(20 * Math.random()); // generate a random number
+            moonRef[index].style.setProperty("--speed", `${speed}s`); // set the --speed property
+        });
+    });
 
     function luminosity(hex: string): number {
         const rgb = hex
@@ -34,15 +43,16 @@
 
 <svelte:window bind:innerWidth={outerWidth} />
 
-{#each projects as project}
+{#each projects as project, index}
     {@const side = Math.floor(luminosity(project.colour) * 100) % 2 === 0}
     <div
-        class={"flex justify-start items-center flex-col " +
+        bind:this={moonRef[index]}
+        class={"flex justify-start items-center flex-col orbit " +
             String(side ? "lg:flex-row" : "lg:flex-row-reverse")}
     >
         <!-- Moon component -->
         <div
-            class={"w-full  md:w-[65%] z-10 p-10" +
+            class={"w-full  md:w-[65%] z-10 p-10  " +
                 String(
                     luminosity(project.colour) > 0.5
                         ? "text-black "

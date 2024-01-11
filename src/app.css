@@ -100,16 +100,20 @@ h3 {
 
 /* Moon Animation */
 
+:root {
+    --speed: 5s;
+}
+
 @keyframes orbit {
     0% {
-        transform: rotate(0deg) translateX(200px) rotate(0deg);
+        transform: rotate(0deg) translateX(10px) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
     }
 }
 
-.your-component {
-    animation: orbit 5s infinite linear;
+.orbit {
+    animation: orbit var(--speed) infinite linear;
 }

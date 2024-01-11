@@ -11,7 +11,7 @@
 
 <div
     class="fixed right-0 grid items-center justify-center
-    m-10 h-10 w-10 z-10 animate-pulse hover:animate-none"
+    m-10 h-10 w-10 z-50 animate-pulse hover:animate-none"
 >
     <div class="group relative">
         <button class="w-12" on:click={showModal}>
