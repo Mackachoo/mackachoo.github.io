@@ -16,7 +16,7 @@
             class="image w-full h-96 md:h-full object-cover md:w-1/3 md:float-right md:ml-10 md:mt-2 mb-5"
         />
         <h2>A Bit About Me</h2>
-        <div class="md:w-1/2 md:pr-10">
+        <div class="md:w-2/3 md:pr-10">
             <div class="w-full h-1 bg-tan mb-5" />
         </div>
         <p>

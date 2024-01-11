@@ -36,41 +36,26 @@ h3 {
     @apply border-paradiso border-b-4 border-l-4 opacity-70
 }
 
-.fade-in {
-    opacity: 60;
-    transition: opacity 0.3s ease-in-out;
+.button {
+    @apply p-2 border-[3px] hover:italic text-center scale-90 sm:scale-100 line-clamp-1 truncate
 }
 
-.fade-out {
-    opacity: 30;
-    transition: opacity 0.3s ease-in-out;
+
+.form {
+    @apply text-white bg-mirage w-full border-l-2 border-b-2 border-tan
 }
 
 /* Navigation Bar */
-.sky-continuous {
-    background: linear-gradient(to top,
-            rgba(52, 123, 131, 1),
-            rgba(52, 123, 131, 0.4),
-            rgba(52, 123, 131, 0.1),
-            rgba(52, 123, 131, 0));
-    opacity: 1;
-}
 
 .sky-discrete {
     @apply bg-paradiso h-4;
-}
-
-.button {
-    @apply p-2 border-[3px] hover:italic text-center scale-90 sm:scale-100 line-clamp-1 truncate
 }
 
 .navbutton {
     @apply button w-32 text-black hover:bg-tan hover:bg-opacity-20
 }
 
-.form {
-    @apply text-white bg-mirage w-full border-l-2 border-b-2 border-tan
-}
+/* Custom Slider */
 
 ::-webkit-scrollbar {
     @apply w-[5px] sm:w-[10px]
@@ -111,4 +96,20 @@ h3 {
 .slider::-moz-range-thumb {
     cursor: pointer;
     @apply bg-paradiso h-6 w-6
+}
+
+/* Moon Animation */
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+
+.your-component {
+    animation: orbit 5s infinite linear;
 }
