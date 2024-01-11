@@ -29,7 +29,7 @@ export const load = (async () => {
                 desc: "The Logbook App for Sports and Activities, built using Flutter, offered a reactive logbook experience across Android, iOS, and web platforms. The backend, implemented with Firebase, provided user authentication and a NoSQL database for efficient data management.",
                 link: "http://logbook2electricboogaloo.web.app/#/",
                 colour: "#00696f",
-                open: true
+                open: false
             }, {
                 title: "WikiSearch",
                 logo: wikisearch,
