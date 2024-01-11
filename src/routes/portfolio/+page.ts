@@ -66,7 +66,7 @@ export const load = (async () => {
                 title: "A New Adrift",
                 logo: newadrift,
                 snippet: "A Unity game demo featuring a customizable ship builder, an island generator and advanced movement system",
-                desc: "The sandbox Unity game demo featured fully customizable ship frames and an island generator, employing a coordinate system, marching cubes, and waveform collapse to create an immersive and interactive gaming experience.",
+                desc: "This sandbox Unity game demo featured fully customizable ship frames and an island generator, employing a coordinate system, marching cubes, and waveform collapse to create an immersive and interactive gaming experience.",
                 link: "http://danbuxton.notion.site/Showcase-a1a03a77802544a18336c974b74fc065?pvs=4",
                 colour: "#0ac4b4",
                 open: false
