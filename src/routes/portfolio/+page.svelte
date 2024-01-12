@@ -103,14 +103,14 @@
             </Moon>
 
             <!-- Hover Tooltip -->
-            <span
+            <!-- <span
                 class={"group-hover:opacity-80 transition-opacity absolute top-3/4 left-2/3 -translate-x-1/2 opacity-0 m-5 mx-auto z-10 " +
                     String(
                         luminosity(project.colour) > 0.5
                             ? "text-black "
                             : "text-white ",
                     )}>Click to see more</span
-            >
+            > -->
         </div>
 
         <!-- Text component -->
