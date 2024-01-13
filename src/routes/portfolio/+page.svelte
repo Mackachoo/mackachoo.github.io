@@ -65,7 +65,7 @@
             >
                 <Moon primary={project.colour}>
                     <button
-                        class="w-full aspect-square flex flex-col justify-evenly align-middle p-2"
+                        class="w-full aspect-square flex flex-col justify-between align-middle p-2"
                         on:click={() => {
                             project.open = !project.open;
                             projects = projects;
@@ -105,18 +105,20 @@
                                 alt={project.title}
                             />
                         {/if}
-                    </button>
 
-                    <!-- Hover Tooltip -->
-                    <span
-                        class={"group-hover:opacity-80 transition-opacity fixed bottom-1 left-3 opacity-0 z-10" +
-                            String(
-                                luminosity(project.colour) > 0.5
-                                    ? "text-black "
-                                    : "text-white ",
-                            )}
-                        ><i class="fa-solid fa-computer-mouse" /> Click to see more</span
-                    >
+                        <!-- Hover Tooltip -->
+                        <span
+                            class={"group-hover:opacity-80 transition-opacity opacity-0 z-10" +
+                                String(
+                                    luminosity(project.colour) > 0.5
+                                        ? "text-black "
+                                        : "text-white ",
+                                )}
+                        >
+                            <i class="fa-solid fa-computer-mouse" />
+                            Click to see more
+                        </span>
+                    </button>
                 </Moon>
             </div>
 
