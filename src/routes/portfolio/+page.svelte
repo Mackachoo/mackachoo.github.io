@@ -10,7 +10,7 @@
     $: outerWidth = 0;
 
     const animate = (node: any, args: any) =>
-        outerWidth > 1024 ? fly(node, args) : slide(node, args);
+        outerWidth < 1024 ? slide(node, args) : undefined;
 
     let projects = data.projects;
     function randomMargin(random: number): string {
@@ -103,64 +103,58 @@
                     {/if}
 
                     <!-- Hover Tooltip -->
-                    <span
-                        class={"group-hover:opacity-80 transition-opacity opacity-0 z-10" +
-                            String(
-                                luminosity(project.colour) > 0.5
-                                    ? "text-black "
-                                    : "text-white ",
-                            )}
-                    >
-                        <i class="fa-solid fa-computer-mouse" />
-                        Click to see more
-                    </span>
+                    {#if !project.open}
+                        <span
+                            class={"group-hover:opacity-80 transition-opacity opacity-0 z-10" +
+                                String(
+                                    luminosity(project.colour) > 0.5
+                                        ? "text-black "
+                                        : "text-white ",
+                                )}
+                        >
+                            <i class="fa-solid fa-computer-mouse" />
+                            Click to see more
+                        </span>
+                    {/if}
                 </button>
             </Moon>
         </div>
 
         <!-- Text component -->
         {#if project.open}
-            <div transition:slide>
-                <div
-                    transition:fly={outerWidth < 1024
-                        ? { y: "-10%" }
-                        : side
-                          ? { x: "300%" }
-                          : { x: "-300%" }}
-                    class="p-2 sm:p-0 md:w-2/3 lg:w-1/3 mb-5"
+            <!-- <div transition:slide > -->
+            <div
+                transition:fly={outerWidth < 1024
+                    ? { y: "-10%" }
+                    : side
+                      ? { x: "300%" }
+                      : { x: "-300%" }}
+                class="p-2 sm:p-0 md:w-2/3 lg:w-1/3 mb-5"
+            >
+                <h1
+                    class={(side ? "" : "lg:text-right") +
+                        " text-tan font-bold mb-4"}
                 >
-                    <h1
-                        class={(side ? "" : "lg:text-right") +
-                            " text-tan font-bold mb-4"}
+                    {project.title}
+                </h1>
+                <p
+                    class={(side ? "lg:text-left" : "lg:text-right") +
+                        " text-justify"}
+                >
+                    {project.desc}
+                </p>
+                {#if project.link}
+                    <div
+                        class={"flex mt-3 justify-end " +
+                            String(side ? "lg:justify-start" : "")}
                     >
-                        {project.title}
-                    </h1>
-                    <p
-                        class={(side ? "lg:text-left" : "lg:text-right") +
-                            " text-justify"}
-                    >
-                        {project.desc}
-                    </p>
-                    {#if project.link}
-                        <div
-                            class={"flex mt-3 justify-end " +
-                                String(side ? "lg:justify-start" : "")}
-                        >
-                            <a
-                                class="text-tan"
-                                href={project.link}
-                                target="_blank"
-                            >
-                                <img
-                                    class="w-10"
-                                    src={shortcut}
-                                    alt="Shortcut"
-                                />
-                            </a>
-                        </div>
-                    {/if}
-                </div>
+                        <a class="text-tan" href={project.link} target="_blank">
+                            <img class="w-10" src={shortcut} alt="Shortcut" />
+                        </a>
+                    </div>
+                {/if}
             </div>
+            <!-- </div> -->
         {/if}
     </div>
 {/each}
