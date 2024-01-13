@@ -26,7 +26,7 @@ export const load = (async () => {
                 logo: logaroo,
                 snippet:
                     "A Flutter and Firebase app for tracking Skydiving jumps and manifesting.",
-                desc: "The Logbook App for Sports and Activities, built using Flutter, offered a reactive logbook experience across Android, iOS, and web platforms. The backend, implemented with Firebase, provided user authentication and a NoSQL database for efficient data management.",
+                desc: "A Logbook App for Sports and Activities, built using Flutter, offered a reactive logbook experience across Android, iOS, and web platforms. The backend, implemented with Firebase, provided user authentication and a NoSQL database for efficient data management.",
                 link: "http://logbook2electricboogaloo.web.app/#/",
                 colour: "#00696f",
                 open: false
@@ -34,7 +34,7 @@ export const load = (async () => {
                 title: "WikiSearch",
                 logo: wikisearch,
                 snippet: "A Search engine for Wikipedia with AI features, built using React and Python as the TTDS Project",
-                desc: "The Text Technologies for Data Science group project focused on developing an inverse positional index for IR and TF-IDF searches on Wikipedia. Utilizing word embedding search and the GPT-3 API, the Python backend was optimized using C++ libraries, achieving a remarkable 100-fold acceleration and seamlessly connected to a React frontend with Django.",
+                desc: "Our Text Technologies for Data Science group project focused on developing an inverse positional index for IR and TF-IDF searches on Wikipedia. Utilizing word embedding search and the GPT-3 API, the Python backend was optimized using C++ libraries, achieving a remarkable 100-fold acceleration and seamlessly connected to a React frontend with Django.",
                 link: "http://github.com/Mackachoo/TTDS-G35-CW3",
                 colour: "#99903e",
                 open: false
@@ -58,7 +58,7 @@ export const load = (async () => {
                 title: "Dynamic Simulation of Bacteria for powering Micro Machines",
                 logo: dissertation,
                 snippet: "Research into the potential use of bacteria for powering micro machines, using simulations of bacterial concentrations",
-                desc: "For the honors project, I employed a smooth particle hydrodynamic simulator to investigate the propulsion of bacteria for potential use in micro machines. Programs were created to analyze and visualize bacteria concentrations, highlighting their potential applications.",
+                desc: "For my honors project, I employed a smooth particle hydrodynamic simulator to investigate the propulsion of bacteria for potential use in micro machines. Programs were created to analyze and visualize bacteria concentrations, highlighting their potential applications.",
                 link: "",
                 colour: "#332ab1",
                 open: false
@@ -74,7 +74,7 @@ export const load = (async () => {
                 title: "Grover's Algorithm Simulation",
                 logo: grovers,
                 snippet: "A simulation of Grover's Algorithm, showcasing its time complexity and confirming its quadratic speedup compared to classical alternatives",
-                desc: "In the Quantum Computing group project, I crafted a simulation of Grover's Algorithm, showcasing its time complexity and providing a quadratic speedup compared to classical alternatives through the use of qubits and quantum logic gates.",
+                desc: "In our Quantum Computing group project, I crafted a simulation of Grover's Algorithm, showcasing its time complexity and providing a quadratic speedup compared to classical alternatives through the use of qubits and quantum logic gates.",
                 link: "http://github.com/Mackachoo/Quantum-Computing-Project",
                 colour: "#6d15a0",
                 open: false
