@@ -74,56 +74,52 @@
 
     <!-- Education and Qualifications List -->
     {#if view === "Education"}
-        <div class="mb-24">
-            {#each data.education as item}
-                <div class="mb-4">
-                    <Accordion>
-                        <div
-                            slot="head"
-                            class="flex flex-col md:flex-row justify-between items-start md:items-center"
-                        >
-                            <h3 class="mr-5 text-rust text-left">
-                                {item.institute}
-                            </h3>
-                            <p class="italic text-moon text-left md:text-right">
-                                {item.course ? item.course + " with" : ""}
-                                {item.grade}
-                            </p>
-                        </div>
-                        <div slot="details" class="">
-                            <p class="text-shuttle">
-                                {item.dates}
-                            </p>
-                            {#each item.extras as extra}
-                                <li class="text-moon pl-4">{extra}</li>
-                            {/each}
-                        </div>
-                    </Accordion>
-                </div>
-            {/each}
-        </div>
-    {:else if view === "Qualifications"}
-        <div class="mb-24">
-            {#each data.qualifications as item}
-                <div
-                    class="flex flex-col md:flex-row md:items-center mb-4 justify-between"
-                >
-                    <div class="flex items-center">
-                        <img
-                            src={item.icon}
-                            alt={item.institute}
-                            class="w-16 mx-0 md:mx-4 p-1 scale-90 md:scale-100"
-                        />
-                        <h3 class="mr-5 text-rust">
-                            {item.name}
-                            {item.level ? "[" + item.level + "]" : ""}
+        {#each data.education as item}
+            <div class="mb-4">
+                <Accordion>
+                    <div
+                        slot="head"
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center"
+                    >
+                        <h3 class="mr-5 text-rust text-left">
+                            {item.institute}
                         </h3>
+                        <p class="italic text-moon text-left md:text-right">
+                            {item.course ? item.course + " with" : ""}
+                            {item.grade}
+                        </p>
                     </div>
-                    <p class="italic text-moon text-right">
-                        {item.institute}
-                    </p>
+                    <div slot="details" class="">
+                        <p class="text-shuttle">
+                            {item.dates}
+                        </p>
+                        {#each item.extras as extra}
+                            <li class="text-moon pl-4">{extra}</li>
+                        {/each}
+                    </div>
+                </Accordion>
+            </div>
+        {/each}
+    {:else if view === "Qualifications"}
+        {#each data.qualifications as item}
+            <div
+                class="flex flex-col md:flex-row md:items-center mb-4 justify-between"
+            >
+                <div class="flex items-center">
+                    <img
+                        src={item.icon}
+                        alt={item.institute}
+                        class="w-16 mx-0 md:mx-4 p-1 scale-90 md:scale-100"
+                    />
+                    <h3 class="mr-5 text-rust">
+                        {item.name}
+                        {item.level ? "[" + item.level + "]" : ""}
+                    </h3>
                 </div>
-            {/each}
-        </div>
+                <p class="italic text-moon text-right">
+                    {item.institute}
+                </p>
+            </div>
+        {/each}
     {/if}
 </div>

@@ -42,7 +42,7 @@
 </ul>
 
 <h2 class="border-tan border-b-4 mb-3">Technologies</h2>
-<ul class="grid sm:grid-cols-2 list-disc list-inside pl-2 mb-24">
+<ul class="grid sm:grid-cols-2 list-disc list-inside pl-2">
     <li>Java/Typescript [Svelte, React Native, Tailwind]</li>
     <li>Dart and Flutter</li>
     <li>C# and Unity</li>

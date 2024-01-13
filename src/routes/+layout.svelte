@@ -11,7 +11,7 @@
     <ContactButton />
     {#key data.pathname}
         <div
-            class="overflow-y-scroll h-screen w-full flex flex-col items-center"
+            class="overflow-y-scroll h-screen w-full flex flex-col items-center mb-24"
             transition:slide
         >
             <div class="w-full max-w-6xl p-5 sm:p-10">

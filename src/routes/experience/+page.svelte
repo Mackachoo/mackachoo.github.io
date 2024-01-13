@@ -52,7 +52,7 @@
 </div>
 
 <!-- Experience List -->
-<div class="mt-5 mb-20 border-tan border-t-4 p-4">
+<div class="mt-5 border-tan border-t-4 p-4">
     {#each data.experiences as experience, i}
         {#if filteredBy.length === 0 || filteredBy.filter( (x) => experience.filters.includes(x), ).length === filteredBy.length}
             <div
