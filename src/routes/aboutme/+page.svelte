@@ -26,7 +26,7 @@
             technologies. I've built websites using Svelte and React as well as
             apps using Flutter and React Native. I've also used Python heavily
             for data analysis, physics simulations and as a backend for other
-            projects using Djangoo. I have used Java, C and MIPS during my
+            projects using Django. I have used Java, C and MIPS during my
             studies and as well as C# with Unity.
         </p>
         <br />
