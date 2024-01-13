@@ -1,6 +1,6 @@
 <script lang="ts">
     import Moon from "../../components/Moon.svelte";
-    import { blur, fly } from "svelte/transition";
+    import { blur, fly, slide } from "svelte/transition";
     import { onMount } from "svelte";
     import type { PageData } from "./$types";
     import shortcut from "$lib/shortcut.svg";
@@ -8,6 +8,9 @@
 
     let moonRef: HTMLDivElement[] = [];
     $: outerWidth = 0;
+
+    const animate = (node: any, args: any) =>
+        outerWidth > 1024 ? fly(node, args) : slide(node, args);
 
     let projects = data.projects;
     function randomMargin(random: number): string {
@@ -119,44 +122,46 @@
 
             <!-- Text component -->
             {#if project.open}
-                <div
-                    transition:fly={outerWidth < 1024
-                        ? { y: "-10%" }
-                        : side
-                          ? { x: "300%" }
-                          : { x: "-300%" }}
-                    class="p-2 sm:p-0 md:w-2/3 lg:w-1/3 mb-5"
-                >
-                    <h1
-                        class={(side ? "" : "lg:text-right") +
-                            " text-tan font-bold mb-4"}
+                <div transition:slide>
+                    <div
+                        transition:fly={outerWidth < 1024
+                            ? { y: "-10%" }
+                            : side
+                              ? { x: "300%" }
+                              : { x: "-300%" }}
+                        class="p-2 sm:p-0 md:w-2/3 lg:w-1/3 mb-5"
                     >
-                        {project.title}
-                    </h1>
-                    <p
-                        class={(side ? "lg:text-left" : "lg:text-right") +
-                            " text-justify"}
-                    >
-                        {project.desc}
-                    </p>
-                    {#if project.link}
-                        <div
-                            class={"flex mt-3 justify-end " +
-                                String(side ? "lg:justify-start" : "")}
+                        <h1
+                            class={(side ? "" : "lg:text-right") +
+                                " text-tan font-bold mb-4"}
                         >
-                            <a
-                                class="text-tan"
-                                href={project.link}
-                                target="_blank"
+                            {project.title}
+                        </h1>
+                        <p
+                            class={(side ? "lg:text-left" : "lg:text-right") +
+                                " text-justify"}
+                        >
+                            {project.desc}
+                        </p>
+                        {#if project.link}
+                            <div
+                                class={"flex mt-3 justify-end " +
+                                    String(side ? "lg:justify-start" : "")}
                             >
-                                <img
-                                    class="w-10"
-                                    src={shortcut}
-                                    alt="Shortcut"
-                                />
-                            </a>
-                        </div>
-                    {/if}
+                                <a
+                                    class="text-tan"
+                                    href={project.link}
+                                    target="_blank"
+                                >
+                                    <img
+                                        class="w-10"
+                                        src={shortcut}
+                                        alt="Shortcut"
+                                    />
+                                </a>
+                            </div>
+                        {/if}
+                    </div>
                 </div>
             {/if}
         </div>
