@@ -50,7 +50,7 @@ export const load = (async () => {
                 title: "Genetic Algorithms",
                 logo: genetic,
                 snippet: "A partnered project to investigate the strengths and weaknesses of different Natural Computing techniques",
-                desc: "In the Natural Computing partnered project, I designed various genetic algorithms and a neural network for pattern matching, conducting a comprehensive study to evaluate their strengths and weaknesses.",
+                desc: "In the Natural Computing partnered project, I programmed various genetic algorithms and a neural network for pattern matching, conducting a comprehensive study to evaluate their strengths and weaknesses.",
                 link: "http://github.com/Mackachoo/Natural-Computing",
                 colour: "#277e12",
                 open: false
