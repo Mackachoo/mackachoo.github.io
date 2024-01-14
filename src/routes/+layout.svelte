@@ -7,15 +7,14 @@
     import ContactButton from "../components/Contact.svelte";
 </script>
 
-<!-- Fix scroll -->
 <div class="flex flex-col items-center">
     <ContactButton />
     {#key data.pathname}
         <div
-            class="overflow-y-scroll h-screen w-full flex flex-col items-center mb-24"
+            class="overflow-y-scroll h-screen w-full flex flex-col items-center"
             transition:slide
         >
-            <div class="w-full max-w-6xl p-5 sm:p-10">
+            <div class="w-full max-w-6xl p-5 sm:p-10 mb-24">
                 <slot />
             </div>
         </div>
