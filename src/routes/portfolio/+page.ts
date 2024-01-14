@@ -26,7 +26,7 @@ export const load = (async () => {
                 logo: logaroo,
                 snippet:
                     "A Flutter and Firebase app for tracking Skydiving jumps and manifesting.",
-                desc: "A Logbook App for Sports and Activities, built using Flutter, offered a reactive logbook experience across Android, iOS, and web platforms. The backend, implemented with Firebase, provided user authentication and a NoSQL database for efficient data management.",
+                desc: "I designed and programmed a Logbook App for Sports and Activities, built using Flutter. It offers a reactive logbook experience across Android, iOS, and web platforms. The backend was implemented with Firebase, providing user authentication and a NoSQL database for efficient data management.",
                 link: "http://logbook2electricboogaloo.web.app/#/",
                 colour: "#00696f",
                 open: false
@@ -34,7 +34,7 @@ export const load = (async () => {
                 title: "WikiSearch",
                 logo: wikisearch,
                 snippet: "A Search engine for Wikipedia with AI features, built using React and Python as the TTDS Project",
-                desc: "Our Text Technologies for Data Science group project focused on developing an inverse positional index for IR and TF-IDF searches on Wikipedia. Utilizing word embedding search and the GPT-3 API, the Python backend was optimized using C++ libraries, achieving a remarkable 100-fold acceleration and seamlessly connected to a React frontend with Django.",
+                desc: "I was the primary programmer for our Text Technologies for Data Science group project which focused on developing an inverse positional index for IR and TF-IDF searches on all of English Wikipedia [~100GB]. We utilized word embedding vector search and the GPT-3 API, the Python backend was optimized using C++ libraries, achieving a remarkable 100-fold acceleration and seamlessly connected to a React frontend with Django.",
                 link: "http://github.com/Mackachoo/TTDS-G35-CW3",
                 colour: "#99903e",
                 open: false
@@ -66,7 +66,7 @@ export const load = (async () => {
                 title: "A New Adrift",
                 logo: newadrift,
                 snippet: "A Unity game demo featuring a customizable ship builder, an island generator and advanced movement system",
-                desc: "This sandbox Unity game demo featured fully customizable ship frames and an island generator, employing a coordinate system, marching cubes, and waveform collapse to create an immersive and interactive gaming experience.",
+                desc: "I developed a sandbox Unity game demo featuring fully customizable ship frames and an island generator. I employed coordinate systems, marching cubes, and waveform collapse  algorithms to create them immersive and interactive gaming experience.",
                 link: "http://danbuxton.notion.site/Showcase-a1a03a77802544a18336c974b74fc065?pvs=4",
                 colour: "#0ac4b4",
                 open: false

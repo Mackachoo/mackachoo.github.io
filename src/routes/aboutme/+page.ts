@@ -17,7 +17,7 @@ export const load: PageLoad = ({ params }) => {
             institute: "Bradfield College",
             dates: "September 2015 - June 2017",
             course: "Maths, Further Maths, Physics and Computer Science",
-            grade: "AABB",
+
             extras: ["Duke of Edinburgh Gold", "Physics Prize, Computer Science Prize and McKinnon Academic Prize", "EPQ on 'Where in the solar system should Humanity make it's next home'", "Model United Nations", "Organised Physics educational events with external speakers"]
         }, {
             institute: "Monktom Combe School",
@@ -46,8 +46,8 @@ export const load: PageLoad = ({ params }) => {
             institute: "University of Southampton",
             icon: uos
         }, {
-            name: "Duke of Edinburgh",
-            level: "Gold, Silver and Bronze",
+            name: "Gold Duke of Edinburgh Award",
+            level: "Silver and Bronze",
             institute: "Bradfield College and Monkton Combe School",
             icon: dofe
         }

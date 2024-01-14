@@ -7,6 +7,7 @@
     import ContactButton from "../components/Contact.svelte";
 </script>
 
+<!-- Fix scroll -->
 <div class="flex flex-col items-center">
     <ContactButton />
     {#key data.pathname}

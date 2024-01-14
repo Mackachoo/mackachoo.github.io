@@ -20,22 +20,23 @@
             <div class="w-full h-1 bg-tan mb-5" />
         </div>
         <p>
-            I hope you are doing well? I am currently looking for Software
-            Development roles. I have a strong background in Computer Science
-            and Physics. I have worked on many different kinds of projects and
-            technologies. I've built websites using Svelte and React as well as
-            apps using Flutter and React Native. I've also used Python heavily
-            for data analysis, physics simulations and as a backend for other
-            projects using Django. I have used Java, C and MIPS during my
-            studies and as well as C# with Unity.
+            I hold a Master's degree in Computational Physics and I am genuinely
+            passionate about technology and new ways of using it to help people.
+            I have a strong background in Computer Science and Physics. I have
+            worked on many different kinds of projects and technologies. I've
+            built websites using Svelte and React as well as apps using Flutter
+            and React Native. I've also used Python heavily for data analysis,
+            physics simulations and as a backend for other projects using
+            Django. I have used Java, C and MIPS during my studies and as well
+            as C# with Unity.
         </p>
         <br />
         <p>
             Over the years I've been in all levels of project management and
             collaboration, which make me well-prepared for working with
-            cross-functional teams and contributing to in dynamic environments.
-            I hold a Master's degree in Computational Physics and I am genuinely
-            passionate about technology and new ways of using it help people.
+            cross-functional teams and contributing in dynamic environments. I
+            hold a Master's degree in Computational Physics and I am genuinely
+            passionate about technology and new ways of using it to help people.
         </p>
     </div>
 
@@ -85,8 +86,10 @@
                             {item.institute}
                         </h3>
                         <p class="italic text-moon text-left md:text-right">
-                            {item.course ? item.course + " with" : ""}
-                            {item.grade}
+                            {item.course
+                                ? item.course +
+                                  (item.grade ? " with" + item.grade : "")
+                                : ""}
                         </p>
                     </div>
                     <div slot="details" class="">

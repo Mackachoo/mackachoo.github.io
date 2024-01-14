@@ -104,7 +104,7 @@
                     <!-- Hover Tooltip -->
                     {#if !project.open}
                         <span
-                            class={"group-hover:opacity-80 transition-opacity opacity-0 z-10" +
+                            class={"group-hover:opacity-80 transition-opacity opacity-80 lg:opacity-0 z-10" +
                                 String(
                                     luminosity(project.colour) > 0.5
                                         ? "text-black "

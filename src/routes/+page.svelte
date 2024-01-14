@@ -12,12 +12,13 @@
             I'm <span class="text-tan">Dan Buxton</span>
         </h1>
         <h2 class="my-4 text-moon">
-            Software Engineer with a Masters in Computational Physics from the
+            A Software Engineer with a Masters in Computational Physics from the
             University of Edinburgh
         </h2>
     </div>
 </div>
 
+<!-- Improve with text from Scottish Government application -->
 <p>
     I am a driven and creative individual with a passion for Physics, Computer
     Science, and Mathematics. I have a strong ability to learn and adapt
@@ -45,8 +46,11 @@
     <li>Organisation</li>
     <li>Leadership</li>
     <li>Adaptability</li>
+    <li>Practically-minded</li>
+    <li>Fast learner</li>
 </ul>
 
+<!-- Add proficiency levels, also fix extr lines. -->
 <h2 class="border-tan border-b-4 mb-3">Technologies</h2>
 <ul class="grid sm:grid-cols-2 list-disc list-inside pl-2">
     <li>Java/Typescript [Svelte, React Native, Tailwind]</li>
