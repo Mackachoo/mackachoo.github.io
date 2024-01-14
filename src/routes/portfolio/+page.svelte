@@ -1,18 +1,15 @@
 <script lang="ts">
+    import FlyingDescription from "./flyingDescription.svelte";
     import Moon from "../../components/Moon.svelte";
-    import { blur, fly, slide } from "svelte/transition";
+    import { blur } from "svelte/transition";
     import { onMount } from "svelte";
-    import type { PageData } from "./$types";
     import shortcut from "$lib/shortcut.svg";
+    import type { PageData } from "./$types";
     export let data: PageData;
 
     let moonRef: HTMLDivElement[] = [];
-    $: outerWidth = 0;
-
-    const animate = (node: any, args: any) =>
-        outerWidth < 1024 ? slide(node, args) : undefined;
-
     let projects = data.projects;
+
     function randomMargin(random: number): string {
         return [
             "p-2 mr-3 lg:p-8",
@@ -44,7 +41,6 @@
     }
 </script>
 
-<svelte:window bind:innerWidth={outerWidth} />
 {#each projects as project, index}
     {@const side = Math.floor(luminosity(project.colour) * 100) % 2 === 0}
     <div
@@ -70,6 +66,7 @@
                         projects = projects;
                     }}
                 >
+                    <!-- Only Moon view with Title, subtitle and small logo -->
                     {#if !project.open}
                         <div class="w-full sm:w-fit sm:mx-4 space-y-5" in:blur>
                             <h1
@@ -93,6 +90,8 @@
                                 alt={project.title}
                             />
                         </div>
+
+                        <!-- Description shown so full screen logo -->
                     {:else}
                         <img
                             in:blur
@@ -120,41 +119,30 @@
             </Moon>
         </div>
 
-        <!-- Text component -->
-        {#if project.open}
-            <!-- <div transition:slide > -->
-            <div
-                transition:fly={outerWidth < 1024
-                    ? { y: "-10%" }
-                    : side
-                      ? { x: "300%" }
-                      : { x: "-300%" }}
-                class="p-2 sm:p-0 md:w-2/3 lg:w-1/3 mb-5"
+        <!-- Description component -->
+        <FlyingDescription {side} open={project.open}>
+            <h1
+                class={(side ? "" : "lg:text-right") +
+                    " text-tan font-bold mb-4"}
             >
-                <h1
-                    class={(side ? "" : "lg:text-right") +
-                        " text-tan font-bold mb-4"}
+                {project.title}
+            </h1>
+            <p
+                class={(side ? "lg:text-left" : "lg:text-right") +
+                    " text-justify"}
+            >
+                {project.desc}
+            </p>
+            {#if project.link}
+                <div
+                    class={"flex mt-3 justify-end " +
+                        String(side ? "lg:justify-start" : "")}
                 >
-                    {project.title}
-                </h1>
-                <p
-                    class={(side ? "lg:text-left" : "lg:text-right") +
-                        " text-justify"}
-                >
-                    {project.desc}
-                </p>
-                {#if project.link}
-                    <div
-                        class={"flex mt-3 justify-end " +
-                            String(side ? "lg:justify-start" : "")}
-                    >
-                        <a class="text-tan" href={project.link} target="_blank">
-                            <img class="w-10" src={shortcut} alt="Shortcut" />
-                        </a>
-                    </div>
-                {/if}
-            </div>
-            <!-- </div> -->
-        {/if}
+                    <a class="text-tan" href={project.link} target="_blank">
+                        <img class="w-10" src={shortcut} alt="Link" />
+                    </a>
+                </div>
+            {/if}
+        </FlyingDescription>
     </div>
 {/each}
