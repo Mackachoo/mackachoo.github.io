@@ -22,7 +22,7 @@ export const load: PageLoad = ({ params }) => {
         }, {
             institute: "Monktom Combe School",
             dates: "September 2012 - June 2015",
-            grade: "A*A*AAAAABBBBB",
+            course: "12 GCSEs including Maths, Additional Maths and Triple Science",
             extras: ["Duke of Edinburgh Silver and Bronze", "REME (Engineering Cadets)"]
 
         }],

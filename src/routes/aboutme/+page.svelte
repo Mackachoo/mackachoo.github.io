@@ -86,10 +86,9 @@
                             {item.institute}
                         </h3>
                         <p class="italic text-moon text-left md:text-right">
-                            {item.course
-                                ? item.course +
-                                  (item.grade ? " with" + item.grade : "")
-                                : ""}
+                            {item.course ? item.course : ""}
+                            {item.course && item.grade ? "with" : ""}
+                            {item.grade ? item.grade : ""}
                         </p>
                     </div>
                     <div slot="details" class="">

@@ -44,7 +44,7 @@ export const load = (async () => {
                 snippet: "Investigating CrBr3 and CrI3 for reservoir computing using an atomistic simulator",
                 desc: "In my master's project, I explored the potential of CrBr3 and CrI3 as 2D magnetic materials for reservoir computing, utilizing an atomistic simulator to analyze their behavior in this physics-based AI training accelerator.",
                 link: "",
-                colour: "#8d1616",
+                colour: "#6e6a62",
                 open: false
             }, {
                 title: "Genetic Algorithms",
@@ -82,7 +82,7 @@ export const load = (async () => {
                 title: "Medical Computing Hackathons",
                 logo: medical,
                 snippet: "Two Hackathon projects involving medical data visualization and blockchain-based medical data storage",
-                desc: "At OxfordHack and Hex Hackathon in Eindhoven, I developed a dual medical data initiative. One project involved a website visualizing diseases on a map using a medical database, while the other utilized Solidity and the Ethereum blockchain for secure medical data storage and transmission.",
+                desc: "At OxfordHack and Hex Hackathon in Eindhoven, I developed a two projects for medical informatics. One project involved a website visualizing disease distribution generated dynamically on a map using a medical databases. The second project utilized Solidity and the Ethereum blockchain for secure medical information storage, transmission and sharing.",
                 link: "",
                 colour: "#b825bd",
                 open: false

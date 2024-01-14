@@ -77,8 +77,7 @@ export const load: PageLoad = ({ params }) => {
                 company: "Edinburgh University Skydiving Club",
                 image: eusdc,
                 position: "President/Treasurer",
-                // Confirm these dates
-                dates: "August 2019 - August 2022",
+                dates: "August 2020 - August 2022",
                 description:
                     "In my first year in the role of Treasurer during covid, we had to be very adaptable and prepare for the unexpected. I managed the accounts and budgeting where I had to be organised and keep myself up to date. Then as lockdown lifted I took the role of, I took the lead of a passionate and successful committee as we grew the club to over 100 members. We organised biweekly courses including all the transport and every week had varied socials that kept people coming back. As a team, we fostered a fun, engaging and welcoming environment for everyone.",
                 filters: ["Volunteer"],

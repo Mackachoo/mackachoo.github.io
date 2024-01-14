@@ -80,7 +80,7 @@
                         </div>
                         <div in:blur class="flex w-full justify-center">
                             <img
-                                class={"opacity-50 w-24 sm:w-36 " +
+                                class={"opacity-70 w-24 sm:w-36 " +
                                     String(
                                         project.title.length > 20
                                             ? "hidden sm:block"

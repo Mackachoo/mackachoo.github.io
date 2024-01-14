@@ -50,7 +50,7 @@
     <li>Fast learner</li>
 </ul>
 
-<!-- Add proficiency levels, also fix extr lines. -->
+<!-- Add proficiency levels -->
 <h2 class="border-tan border-b-4 mb-3">Technologies</h2>
 <ul class="grid sm:grid-cols-2 list-disc list-inside pl-2">
     <li>Java/Typescript [Svelte, React Native, Tailwind]</li>
@@ -60,8 +60,8 @@
     <li>Python [SciPy, Pandas, MatPlotLib and Django]</li>
     <li>C, Java and MIPS [Architecture]</li>
     <li>Windows, Linux and MacOS [Hackintosh]</li>
-    <li>Networks and Cloud Computing [Firebase, GCP and AWS]</li>
+    <li>Cloud Computing [Firebase, GCP and AWS]</li>
     <li>Fusion 360 and [FDM/SLA] 3D Printing</li>
-    <li>Adobe Suite [particularly Photoshop, Illustrator and XD]</li>
-    <li>Electronics [particularly Drones and Raspberry Pi]</li>
+    <li>Adobe Suite [Photoshop, Illustrator and XD]</li>
+    <li>Electronics [particularly Raspberry Pi and Drones]</li>
 </ul>
