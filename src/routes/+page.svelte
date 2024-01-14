@@ -5,11 +5,17 @@
 
 <div class="flex flex-col-reverse sm:flex-row sm:items-end mb-6">
     <img src={me} alt="Dan B" class="image sm:w-80 mr-6" />
-    <h1>
-        Hi!
-        <br />
-        I'm <span class="text-tan">Dan Buxton</span>
-    </h1>
+    <div>
+        <h1>
+            Hi!
+            <br />
+            I'm <span class="text-tan">Dan Buxton</span>
+        </h1>
+        <h2 class="my-4 text-moon">
+            Software Engineer with a Masters in Computational Physics from the
+            University of Edinburgh
+        </h2>
+    </div>
 </div>
 
 <p>
@@ -48,10 +54,10 @@
     <li>C# and Unity</li>
     <li>KDB+ and qSQL</li>
     <li>Python [SciPy, Pandas, MatPlotLib and Django]</li>
-    <li>Basic C, Java and MIPS [Architecture]</li>
+    <li>C, Java and MIPS [Architecture]</li>
     <li>Windows, Linux and MacOS [Hackintosh]</li>
-    <li>Networks and Cloud Computing [primarily GCP]</li>
+    <li>Networks and Cloud Computing [Firebase, GCP and AWS]</li>
     <li>Fusion 360 and [FDM/SLA] 3D Printing</li>
-    <li>Adobe Suite [particularly Photoshop]</li>
+    <li>Adobe Suite [particularly Photoshop, Illustrator and XD]</li>
     <li>Electronics [particularly Drones and Raspberry Pi]</li>
 </ul>
