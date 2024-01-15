@@ -22,7 +22,7 @@ export const load: PageLoad = ({ params }) => {
                 position: "Volunteer Deckhand",
                 dates: "July 2023 - October 2023",
                 description:
-                    "I worked as a volunteer deckhand on a 40m square rigged tall ship sailing around the Baltic and North Sea. I was part of a team of 10 crew working in confined enviroments, underpresure and having to rapidly react to changing conditions when necessary.",
+                    "I worked as a volunteer deckhand on a 40m square rigged tall ship sailing around the Baltic and North Sea. I was part of a team of 10 crew working in confined environments, under pressure and having to rapidly react to changing conditions when necessary.",
                 filters: ["Hospitality", "Volunteer"],
             },
             {
