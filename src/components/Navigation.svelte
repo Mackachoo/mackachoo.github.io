@@ -32,41 +32,4 @@
             {/each}
         </div>
     </div>
-    <!-- <svg class="absolute bottom-0 left-0 z-10" height="64" width="10000">
-        <rect
-            width="1000"
-            height="30"
-            transform="translate(0 10)"
-            fill="#FFFFF"
-            opacity="0.5"
-        />
-        <rect
-            width="1000"
-            height="30"
-            transform="translate(40 26)"
-            fill="#FFFFF"
-            opacity="0.5"
-        />
-        <rect
-            width="1000"
-            height="30"
-            transform="translate(0 26)"
-            fill="#FFFFF"
-            opacity="0.5"
-        />
-        <rect
-            width="1000"
-            height="30"
-            transform="translate(0 260)"
-            fill="#FFFFF"
-            opacity="0.5"
-        />
-        <rect
-            width="1000"
-            height="30"
-            transform="translate(60 20)"
-            fill="#FFFFF"
-            opacity="0.5"
-        />
-    </svg> -->
 </div>
