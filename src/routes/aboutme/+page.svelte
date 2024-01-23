@@ -20,23 +20,24 @@
             <div class="w-full h-1 bg-tan mb-5" />
         </div>
         <p>
-            I hold a Master's degree in Computational Physics and I am genuinely
-            passionate about technology and new ways of using it to help people.
-            I have a strong background in Computer Science and Physics. I have
-            worked on many different kinds of projects and technologies. I've
-            built websites using Svelte and React as well as apps using Flutter
-            and React Native. I've also used Python heavily for data analysis,
-            physics simulations and as a backend for other projects using
-            Django. I have used Java, C and MIPS during my studies and as well
-            as C# with Unity.
+            I am a driven and creative individual with a passion for Physics,
+            Computer Science, and Mathematics. I have lots of experience picking
+            up new technologies and being able to build with them very quickly.
+            I am genuinely passionate about improving my skills and learning
+            about new technologies, and look forward to finding new ways of
+            using both of these to help others.
         </p>
         <br />
         <p>
-            Over the years I've been in all levels of project management and
-            collaboration, which make me well-prepared for working with
-            cross-functional teams and contributing in dynamic environments. I
-            hold a Master's degree in Computational Physics and I am genuinely
-            passionate about technology and new ways of using it to help people.
+            Over the years I have been in all levels of project management and
+            collaboration; from running the Skydiving club at University to
+            helping with data analysis as an intern or during my masters. This
+            makes me well prepared for working in multi disciplined teams and
+            contributing in dynamic environments. I really enjoy working as a
+            team to build greater products than what we could have otherwise.
+            One of my biggest hobbies is tinkering with technology; I daily
+            drive a Hackintosh, built one and a half drones (it's a long
+            story...) and used of FDM and SLA 3D printers extensively.
         </p>
     </div>
 

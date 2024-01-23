@@ -127,12 +127,12 @@
             >
                 {project.title}
             </h1>
-            <p
+            <div
                 class={(side ? "lg:text-left" : "lg:text-right") +
                     " text-justify"}
             >
                 {project.desc}
-            </p>
+            </div>
             {#if project.link}
                 <div
                     class={"flex mt-3 justify-end " +

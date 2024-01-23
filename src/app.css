@@ -8,6 +8,7 @@ html {
 
 * {
     font-family: 'Courier Prime', monospace;
+    /* min-width: 0; */
 }
 
 p,
@@ -18,6 +19,7 @@ li {
 
 p {
     text-align: justify;
+    @apply indent-8
 }
 
 h1 {

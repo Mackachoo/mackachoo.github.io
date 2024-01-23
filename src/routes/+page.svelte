@@ -18,17 +18,19 @@
     </div>
 </div>
 
-<!-- Improve with text from Scottish Government application -->
 <p>
-    I am a driven and creative individual with a passion for Physics, Computer
-    Science, and Mathematics. I have a strong ability to learn and adapt
-    quickly, as well as work independently or as part of a team. I am looking
-    for a challenging position in the field of technology, both in software and
-    hardware, where I can use my skills to make a significant and creative
-    contribution.
+    I have successfully built apps and websites for a number of different
+    projects with a wide range of technologies, such as React/React Native,
+    Svelte and Flutter. These include a logbook app for extreme sports built
+    with Flutter and using Firebase for user authentication, databases and file
+    storage and this portfolio website built with Svelte and Typescript. I have
+    used Python heavily for data analysis, physics simulations and as a Django
+    backend for an AI powered Wikipedia search engine. To make a physics-based
+    modular airship game I learnt Unity and C# and while at university I worked
+    with Java, C and MIPS as well as AWS and Azure.
 </p>
 
-<div class="flex md:mx-10 my-6 justify-evenly border-tan text-tan">
+<div class="flex md:mx-10 my-8 justify-evenly border-tan text-tan">
     <a
         href="https://www.linkedin.com/in/danbuxton/"
         target="_blank"
