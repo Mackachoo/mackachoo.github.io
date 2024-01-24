@@ -86,7 +86,7 @@ export const load: PageLoad = ({ params }) => {
                 company: "Reaction Engines",
                 image: reactionengines,
                 position: "Engineering Intern",
-                dates: "August 2016",
+                dates: "August 2018",
                 description:
                     "During my internship working in the engineering department, I used Solidworks to edit components as well as analyse them for safety concerns. My main focus was to determine if bolts in a tool were to break, would the outer casing explode due to the pressure. I spent a considerable time shadowing engineers from various departments, observing their work and gaining insight into their different tasks. This gave me a better understanding of the field of engineering and the challenges that come with it.",
                 filters: ["Tech", "Internship"],
