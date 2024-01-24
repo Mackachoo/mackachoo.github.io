@@ -43,14 +43,16 @@
 
 {#each projects as project, index}
     {@const side = Math.floor(luminosity(project.colour) * 100) % 2 === 0}
+
+    <!-- ? Maybe move the orbit tag to just the Moon component for readability -->
     <div
         bind:this={moonRef[index]}
-        class={"flex justify-start items-center flex-col orbit " +
+        class={"flex justify-start items-center flex-col " +
             String(side ? "lg:flex-row" : "lg:flex-row-reverse")}
     >
         <!-- Moon component -->
         <div
-            class={"w-full group md:w-[65%] z-10 p-10  " +
+            class={"w-full group md:w-[65%] z-10 p-10 orbit " +
                 String(
                     luminosity(project.colour) > 0.5
                         ? "text-black "
