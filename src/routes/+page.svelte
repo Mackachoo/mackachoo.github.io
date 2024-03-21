@@ -58,6 +58,7 @@
     <li>Java/Typescript [Svelte, React Native, Tailwind]</li>
     <li>Dart and Flutter</li>
     <li>C# and Unity</li>
+    <li>Java</li>
     <li>KDB+ and qSQL</li>
     <li>Python [SciPy, Pandas, MatPlotLib and Django]</li>
     <li>C, Java and MIPS [Architecture]</li>
