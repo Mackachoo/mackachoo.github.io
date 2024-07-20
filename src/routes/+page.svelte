@@ -12,8 +12,9 @@
             I'm <span class="text-tan">Dan Buxton</span>
         </h1>
         <h2 class="my-4 text-moon">
-            A Software Engineer with a Masters in Computational Physics from the
-            University of Edinburgh
+            A Software Engineer currently working at <b>Morgan Stanley</b> with
+            a
+            <b>Masters in Computational Physics</b> from the University of Edinburgh
         </h2>
     </div>
 </div>
@@ -59,12 +60,13 @@
     <li>Dart and Flutter</li>
     <li>C# and Unity</li>
     <li>Java</li>
-    <li>KDB+ and qSQL</li>
     <li>Python [SciPy, Pandas, MatPlotLib and Django]</li>
+    <li>KDB+ and qSQL</li>
+    <li>SQL and KDB+ with qSQL</li>
     <li>C, Java and MIPS [Architecture]</li>
     <li>Windows, Linux and MacOS [Hackintosh]</li>
     <li>Cloud Computing [Firebase, GCP and AWS]</li>
     <li>Fusion 360 and [FDM/SLA] 3D Printing</li>
     <li>Adobe Suite [Photoshop, Illustrator and XD]</li>
-    <li>Electronics [particularly Raspberry Pi and Drones]</li>
+    <li>Electronics [Raspberry Pis and Drones]</li>
 </ul>

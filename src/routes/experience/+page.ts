@@ -1,4 +1,5 @@
 import type { PageLoad } from './$types';
+import morganstanley from "$lib/experience/morganstanley.png";
 import eyeofthewind from "$lib/experience/eyeofthewind.png";
 import sage from "$lib/experience/sage.png";
 import spaceworks from "$lib/experience/spaceworks.png";
@@ -15,6 +16,16 @@ import bradfield from "$lib/experience/bradfield.png";
 export const load: PageLoad = ({ params }) => {
     return {
         experiences: [
+            {
+                company: "Morgan Stanley",
+                companydesc: "Contracted through MThree",
+                image: morganstanley,
+                position: "Database Engineer",
+                dates: "April 2024 - Present",
+                description:
+                    "I work as a database engineer as part of ITARA where I am responsible for hygiene and development in a very fastpaced enviroment. I work in a small team of engineers developing and maintaining scripts for data extraction, transformation and loading. Our databases use a mixture of SQL Languages and some KDB+ which we mainly access with Python and Perl scripts.",
+                filters: ["Tech", "Full-Time"],
+            },
             {
                 company: "Eye of the Wind",
                 companydesc: "Charter Tall Ship",
