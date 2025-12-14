@@ -1,5 +1,6 @@
 import type { PageLoad } from './$types';
 import morganstanley from "$lib/experience/morganstanley.png";
+import skiwi from "$lib/experience/skiwi.png";
 import eyeofthewind from "$lib/experience/eyeofthewind.png";
 import sage from "$lib/experience/sage.png";
 import spaceworks from "$lib/experience/spaceworks.png";
