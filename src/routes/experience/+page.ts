@@ -17,11 +17,21 @@ export const load: PageLoad = ({ params }) => {
     return {
         experiences: [
             {
+                company: "Skiwi",
+                companydesc: "Meet. Track. Ski.",
+                image: skiwi,
+                position: "Founder",
+                dates: "June 2025 - Present",
+                description:
+                    "I've founded a start up for snowsports mapping and holiday experience app. Allowing families and friends to track each other while on holiday in the mountains. The app has been developed in Flutter using Firebase as a backend and uses GIS extensively.",
+                filters: ["Tech", "Full-Time"],
+            },
+            {
                 company: "Morgan Stanley",
                 companydesc: "Contracted through MThree",
                 image: morganstanley,
                 position: "Database Engineer",
-                dates: "April 2024 - Present",
+                dates: "April 2024 - June 2025",
                 description:
                     "I work as a database engineer as part of ITARA where I am responsible for hygiene and development in a very fastpaced enviroment. I work in a small team of engineers developing and maintaining scripts for data extraction, transformation and loading. Our databases use a mixture of SQL Languages and some KDB+ which we mainly access with Python and Perl scripts.",
                 filters: ["Tech", "Full-Time"],
