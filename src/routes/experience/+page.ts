@@ -21,7 +21,7 @@ export const load: PageLoad = ({ params }) => {
                 company: "Skiwi",
                 companydesc: "Meet. Track. Ski.",
                 image: skiwi,
-                position: "Founder",
+                position: "Director and Software Engineer",
                 dates: "June 2025 - Present",
                 description:
                     "I've founded a start up for snowsports mapping and holiday experience app. Allowing families and friends to track each other while on holiday in the mountains. The app has been developed in Flutter using Firebase as a backend and uses GIS extensively.",
