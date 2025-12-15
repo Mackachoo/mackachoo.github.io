@@ -12,8 +12,7 @@
             I'm <span class="text-tan">Dan Buxton</span>
         </h1>
         <h2 class="my-4 text-moon">
-            A Software Engineer and the director of <b>Skiwi</b> with
-            a
+            A Software Engineer and the director of <b>Skiwi</b> with a
             <b>Masters in Computational Physics</b> from the University of Edinburgh
         </h2>
     </div>
