@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: *.json
+Sitemap: https://mackachoo.github.io/sitemap.xml
