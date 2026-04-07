@@ -1,4 +1,5 @@
 import type { PageLoad } from './$types';
+import skiwi from "$lib/portfolio/skiwi.png";
 import logaroo from "$lib/portfolio/logaroo.png";
 import wikisearch from "$lib/portfolio/wikisearch.png";
 import newadrift from "$lib/portfolio/newadrift.png";
@@ -22,6 +23,15 @@ export const load = (async () => {
     return {
         projects: [
             {
+                title: "Skiwi",
+                logo: skiwi,
+                snippet:
+                    "Founder and lead developer of a Flutter/Firebase app for skiing with offline maps, group tracking, and 3,000+ resort discovery.",
+                desc: "As founder and lead developer, I built Skiwi's mobile and web experience while driving business strategy and marketing. The app features offline piste maps, real-time group tracking, battery optimization, and dining recommendations across 3,000+ resorts. Built with Flutter, Firebase, and Mapbox for iOS and Android. Beyond engineering, I spearhead the business strategy, marketing, and growth initiatives.",
+                link: "http://skiwi.co.uk",
+                colour: "#A5D4EC",
+                open: false
+            }, {
                 title: "Logaroo",
                 logo: logaroo,
                 snippet:
