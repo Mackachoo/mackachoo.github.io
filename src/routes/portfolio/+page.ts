@@ -39,7 +39,7 @@ export const load = (async () => {
                     "A cross-platform video player for the TLDR News network built with Flutter, Firebase, and the YouTube Data API.",
                 desc: "I built a cross-platform video player supporting web, Android, and iOS. Features include channel browsing for all TLDR News channels with full back-catalogues, in-app YouTube playback, email and Google sign-in authentication, and an admin console for managing channels and users. The app utilizes Firebase Remote Config for live API key rotation without shipping new builds, and supports light and dark themes with custom typography.",
                 link: "https://tldr-news-229ac.web.app/",
-                colour: "#FF6B35",
+                colour: "#1F4C94",
                 open: false
             }, {
                 title: "Logaroo",
